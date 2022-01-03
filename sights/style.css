@@ -1,0 +1,276 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #769fcd;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.item {
+    color: #f7fbfc;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Train One', cursive;
+}
+
+.first {
+    margin-right: auto;
+}
+
+.item:hover {
+    color: #b9d7ea;
+}
+.main {
+    display: flex;
+}
+
+.beach {
+    width: 100%;
+}
+
+body {
+    background-color: #f7fbfc;
+}
+
+.lake {
+    display: flex;
+}
+
+.motto {
+    text-transform: uppercase;
+    font-family: 'Train One', cursive;
+    align-self: center;
+    color: #769fcd;
+    padding: 15px;
+}
+
+.seasons {
+    display: flex;
+    justify-content: center;
+    background-color: #769fcd;
+}
+
+.choose_season {
+    text-transform: uppercase;
+    font-family: 'Train One', cursive;
+    font-size: 25px;
+    color: #f7fbfc;
+}
+.discovermi {
+    text-transform: uppercase;
+    font-family: 'Train One', cursive;
+    font-size: 25px;
+    color: #f7fbfc;
+}
+
+.choose_season:hover {
+    color: #b9d7ea;
+}
+
+.discovermi:hover {
+    color: #b9d7ea;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 250px;
+    align-self: center;
+    padding: 0 10px;
+
+}
+
+.ss {
+    align-self: center;
+    background-color: #f7fbfc;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.discover {
+    background-color: #b9d7ea;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Train One', cursive;
+    font-size: 15px;
+    color: #769fcd;
+}
+
+.ing {
+background-color: #f7fbfc;
+border-radius: 10px;
+padding: 10px 30px;
+}
+
+.pic:hover {
+    opacity: 0.5;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.single {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Train One', cursive;
+    font-size: 20px;
+    color: #769fcd;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.single:hover {
+    background-color: #d6e6f2;
+    border-radius: 10px;
+}
+
+del {
+    display: inline-block;
+    transform: rotate(-15deg);
+}
+
+ins {
+    color: #e84545;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Train One', cursive;
+    text-transform: uppercase;
+}
+
+.lbl {
+    color: #769fcd;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cntct {
+    text-transform: uppercase;
+    font-family: 'Train One', cursive;
+    padding: 15px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 15px;
+    border: none;
+    background-color: #f7fbfc;
+}
+
+.cntct:hover {
+    background-color: #d6e6f2;
+    border-radius: 10px;
+}
+
+.cta {
+    background-color: #b9d7ea;
+    color: #f7fbfc;
+    text-transform: uppercase;
+    font-family: 'Train One', cursive;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.cta:hover {
+    background-color: #769fcd;
+}
+
+a {
+    text-decoration: none;
+    color: #3f72af;
+}
+#sunset {
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .lake {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .single {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .cntct {
+        font-size: 15px;
+        padding: 10px 20px;
+        margin: 5px 0;
+    }
+    .discover {
+        text-align: center;
+    }
+
+    .discovermi, .choose_season {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .lake {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .single {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .cntct {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .discover {
+        text-align: center;
+    }
+}
