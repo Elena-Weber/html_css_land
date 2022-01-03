@@ -1,5 +1,12 @@
 body {
     background-color: #f7fbfc;
+    font-family: 'Train One', cursive;
+}
+
+#back {
+    color: #e84545;
+    text-decoration: none;
+    margin: 15px;
 }
 
 .nav {
@@ -8,6 +15,7 @@ body {
     background-color: #769fcd;
     font-size: 25px;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .item {
@@ -15,7 +23,6 @@ body {
     padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Train One', cursive;
 }
 
 .item:hover {
@@ -32,6 +39,7 @@ body {
 
 .beach {
     width: 100%;
+    border-radius: 20px;
 }
 
 .lake {
@@ -40,7 +48,6 @@ body {
 
 .motto {
     text-transform: uppercase;
-    font-family: 'Train One', cursive;
     align-self: center;
     color: #769fcd;
     padding: 15px;
@@ -54,7 +61,6 @@ body {
 
 .choose_season {
     text-transform: uppercase;
-    font-family: 'Train One', cursive;
     font-size: 25px;
     color: #f7fbfc;
 }
@@ -65,7 +71,6 @@ body {
 
 .discovermi {
     text-transform: uppercase;
-    font-family: 'Train One', cursive;
     font-size: 25px;
     color: #f7fbfc;
 }
@@ -105,7 +110,6 @@ body {
     padding: 5px;
     border-radius: 10px;
     text-transform: uppercase;
-    font-family: 'Train One', cursive;
     font-size: 15px;
     color: #769fcd;
 }
@@ -124,7 +128,6 @@ body {
 .single {
     list-style: none;
     text-transform: uppercase;
-    font-family: 'Train One', cursive;
     font-size: 20px;
     color: #769fcd;
     padding: 30px 50px;
@@ -150,7 +153,6 @@ ins {
 .label {
     display: flex;
     flex-direction: column;
-    font-family: 'Train One', cursive;
     text-transform: uppercase;
 }
 
@@ -171,7 +173,6 @@ ins {
 
 .cntct {
     text-transform: uppercase;
-    font-family: 'Train One', cursive;
     padding: 15px 50px;
     font-size: 20px;
     cursor: pointer;
@@ -189,7 +190,6 @@ ins {
     background-color: #b9d7ea;
     color: #f7fbfc;
     text-transform: uppercase;
-    font-family: 'Train One', cursive;
     padding: 15px;
     font-size: 20px;
     cursor: pointer;
