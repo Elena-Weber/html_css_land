@@ -1,16 +1,8 @@
-/* .navbar {
-    font-family: 'Dancing Script', cursive;
-}
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 body {
     font-family: 'Satisfy', cursive;
     margin: 5px 10px;
 }
+
 nav {
     font-size: 25px;
 }
