@@ -1,3 +1,7 @@
+body {
+    background-color: #f7fbfc;
+}
+
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -14,23 +18,20 @@
     font-family: 'Train One', cursive;
 }
 
+.item:hover {
+    color: #b9d7ea;
+}
+
 .first {
     margin-right: auto;
 }
 
-.item:hover {
-    color: #b9d7ea;
-}
 .main {
     display: flex;
 }
 
 .beach {
     width: 100%;
-}
-
-body {
-    background-color: #f7fbfc;
 }
 
 .lake {
@@ -57,15 +58,16 @@ body {
     font-size: 25px;
     color: #f7fbfc;
 }
+
+.choose_season:hover {
+    color: #b9d7ea;
+}
+
 .discovermi {
     text-transform: uppercase;
     font-family: 'Train One', cursive;
     font-size: 25px;
     color: #f7fbfc;
-}
-
-.choose_season:hover {
-    color: #b9d7ea;
 }
 
 .discovermi:hover {
@@ -75,7 +77,6 @@ body {
 .pics {
     display: flex;
     justify-content: center;
-    
     flex-wrap: wrap;
 }
 
@@ -83,7 +84,10 @@ body {
     width: 250px;
     align-self: center;
     padding: 0 10px;
+}
 
+.pic:hover {
+    opacity: 0.5;
 }
 
 .ss {
@@ -107,13 +111,9 @@ body {
 }
 
 .ing {
-background-color: #f7fbfc;
-border-radius: 10px;
-padding: 10px 30px;
-}
-
-.pic:hover {
-    opacity: 0.5;
+    background-color: #f7fbfc;
+    border-radius: 10px;
+    padding: 10px 30px;
 }
 
 .list {
@@ -204,6 +204,7 @@ a {
     text-decoration: none;
     color: #3f72af;
 }
+
 #sunset {
     width: 100%;
 }
@@ -238,7 +239,6 @@ a {
     .discover {
         text-align: center;
     }
-
     .discovermi, .choose_season {
         text-align: center;
     }
