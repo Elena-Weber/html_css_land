@@ -79,39 +79,39 @@
         <li class="single">Group tours (up to 10 ppl)<br>from <del>$250</del> <ins>$199</ins></li>
         <li class="single">Photo shoots<br>from <del>$60</del> <ins>$49</ins></li>
     </ul>
-    <form>
-        <div class="seasons">
-            <h3 class="choose_season" id="contactus">Contact us</h3>
-        </div>
-        <br>
-        <div class="contact">
-            <button class="cntct"><a href="mailto:example@example.com">Email us</a></button>
-            <button class="cntct"><a href="tel:5555555555">Call us</a></button>
-            <button class="cntct"><a href="#">Follow us on ig</a></button>
-            <button class="cntct"><a href="#">Follow us on fb</a></button>
-        </div>
-        <br>
-        <div class="seasons">
-            <h3 class="choose_season">or Send us a message</h3>
-        </div>
-        <br>
+    <div class="seasons">
+        <h3 class="choose_season" id="contactus">Contact us</h3>
+    </div>
+    <br>
+    <div class="contact">
+        <button class="cntct"><a href="mailto:example@example.com">Email us</a></button>
+        <button class="cntct"><a href="tel:5555555555">Call us</a></button>
+        <button class="cntct"><a href="https://www.instagram.com/" target="blank">Follow us on ig</a></button>
+        <button class="cntct"><a href="https://www.facebook.com/" target="blank">Follow us on fb</a></button>
+    </div>
+    <br>
+    <div class="seasons">
+        <h3 class="choose_season">or Send us a message</h3>
+    </div>
+    <br>
+    <form accept-charset="utf-8" action="https://formspree.io/f/mnqlgqyv" method="POST">
         <div class="label">
             <label class="lbl">Your name</label>
-            <input type="text" placeholder="Enter your name here">
+            <input type="text" name="name" placeholder="Enter your name here" required>
         </div>
         <br>
         <div class="label">
             <label class="lbl">What are you interested in?</label>
-            <input type="text" placeholder="Services, prices, locations, special offers...">
+            <textarea rows="3" type="text" name="message" placeholder="Services, prices, locations, special offers..." required></textarea>
         </div>
         <br>
         <div class="label">
             <label class="lbl">Your email</label>
-            <input type="email" placeholder="Enter your valid email here">
+            <input type="email" name="_replyto" placeholder="Enter your valid email here" required>
         </div>
         <br>
         <div class="btn">
-            <button class="cta">Send</button>
+            <button type="submit" class="cta">Send</button>
         </div>
     </form>
     <br>
