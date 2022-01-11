@@ -36,10 +36,29 @@ body {
     height: 35px;
 }
 
-.primary-title {
+.titles {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    /* move text block with its center fixed */
+    transform: translate(-50%, -50%);
+}
+
+.title {
     color: white;
 }
 
+.primary-title {
+    text-transform: uppercase;
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
 .secondary-title {
-    
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 16px;
 }
