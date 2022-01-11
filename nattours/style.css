@@ -54,6 +54,11 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-out;
 }
 
 .secondary-title {
@@ -61,4 +66,33 @@ body {
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 16px;
+    animation: moveLeft 2s ease-out;
+}
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
