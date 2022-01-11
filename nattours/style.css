@@ -36,12 +36,17 @@ body {
     height: 35px;
 }
 
+.logo:hover {
+    animation: turning 1s ease-in-out;
+}
+
 .titles {
     position: absolute;
     top: 30%;
     left: 50%;
     /* move text block with its center fixed */
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .title {
@@ -66,7 +71,57 @@ body {
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 16px;
-    animation: moveLeft 2s ease-out;
+    animation: moveLeft 2s;
+    margin-bottom: 60px;
+}
+
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.main-btn {
+    background-color: white;
+    color: teal;
+    animation: moveUp 1s ease-out .75s;
+    animation-fill-mode: backwards; /* applies zero animation at start, useful with animation delay */
+}
+
+.main-btn::after {
+    background-color: white;
 }
 
 @keyframes moveRight {
@@ -94,5 +149,25 @@ body {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes turning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
