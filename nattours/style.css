@@ -1,0 +1,45 @@
+* {
+    /* no margins and padding are added automatically to anything */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* margins and borders are not added up to width or height of elements */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: bisque;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    /* gradient on top of background image */
+    background-image: linear-gradient(to right bottom,
+    #7ed56fc7, #28b485c7),
+    url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80");
+    background-size: cover;
+    background-position: top; /* fixing background image*/
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+}
+
+.logo-div {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.primary-title {
+    color: white;
+}
+
+.secondary-title {
+    
+}
