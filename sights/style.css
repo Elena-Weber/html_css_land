@@ -43,10 +43,11 @@ body {
 
 .lake {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .pic_lake {
-    margin: 0 100px;
+    margin: 0 10px;
     border-radius: 20px;
 }
 
@@ -85,7 +86,7 @@ body {
 
 .pics {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -218,6 +219,8 @@ input, textarea {
     font-size: 18px;
     padding: 5px;
     border: 1px solid #3f72af;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 @media all and (max-width: 800px) {
