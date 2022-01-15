@@ -12,6 +12,19 @@ nav {
     margin: 15px;
 }
 
+#about {
+    text-align:justify;
+}
+
 .space {
     margin: 10px;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.pic {
+    margin-left: auto;
+    margin-right: auto;
 }
