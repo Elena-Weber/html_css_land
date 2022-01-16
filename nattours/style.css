@@ -1,21 +1,25 @@
-* {
+*, *::after, *::before { /* valid for all elements */
     /* no margins and padding are added automatically to anything */
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* margins and borders are not added up to width or height of elements */
+    box-sizing: inherit; /* inherits from body */
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.7;
     color: bisque;
-    padding: 30px;
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 .header {
-    height: 95vh;
+    height: 95vh; /* occupies 95% of screen vertically */
     /* gradient on top of background image */
     background-image: linear-gradient(to right bottom,
     #7ed56fc7, #28b485c7),
@@ -26,17 +30,17 @@ body {
     position: relative;
 }
 
-.logo-div {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
 .logo {
-    height: 35px;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
 }
 
-.logo:hover {
+.logo-pic {
+    height: 3.5rem;
+}
+
+.logo-pic:hover {
     animation: turning 1s ease-in-out;
 }
 
@@ -44,8 +48,7 @@ body {
     position: absolute;
     top: 30%;
     left: 50%;
-    /* move text block with its center fixed */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* move text block with its center fixed */
     text-align: center;
 }
 
@@ -56,9 +59,9 @@ body {
 .primary-title {
     text-transform: uppercase;
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation-name: moveRight;
     animation-duration: 2s;
     /* animation-delay: 2s; */
@@ -68,31 +71,32 @@ body {
 
 .secondary-title {
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
-    letter-spacing: 16px;
+    letter-spacing: 1.6rem;
     animation: moveLeft 2s;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 2rem;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
 .btn::after {
@@ -100,7 +104,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -127,10 +131,10 @@ body {
 @keyframes moveRight {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
     100% {
         opacity: 1;
@@ -141,10 +145,10 @@ body {
 @keyframes moveLeft {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
     100% {
         opacity: 1;
@@ -155,7 +159,7 @@ body {
 @keyframes moveUp {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(5rem);
     }
     100% {
         opacity: 1;
