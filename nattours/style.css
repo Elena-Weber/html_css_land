@@ -26,48 +26,42 @@ body {
   /* fixing background image on top */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  .header__logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo-pic {
+    height: 3.5rem; }
+  .header__logo-pic:hover {
+    animation: turning 1s ease-in-out; }
 
-.logo {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.logo-pic {
-  height: 3.5rem; }
-
-.logo-pic:hover {
-  animation: turning 1s ease-in-out; }
-
-.titles {
+.main {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* move text block with its center fixed */
   text-align: center; }
-
-.title {
-  color: white; }
-
-.primary-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveRight;
-  animation-duration: 2s;
-  /* animation-delay: 2s; */
-  /* animation-iteration-count: 3; */
-  animation-timing-function: ease-out; }
-
-.secondary-title {
-  display: block;
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 1.6rem;
-  animation: moveLeft 2s;
-  margin-bottom: 6rem; }
+  .main__title {
+    color: white; }
+  .main__primary-title {
+    text-transform: uppercase;
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-out; }
+  .main__secondary-title {
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.6rem;
+    animation: moveLeft 2s;
+    margin-bottom: 6rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -81,11 +75,14 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.205); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.205); }
 
 .btn::after {
   content: "";
@@ -99,19 +96,14 @@ body {
   z-index: -1;
   transition: all .4s; }
 
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
-
 .main-btn {
   background-color: white;
   color: teal;
   animation: moveUp 1s ease-out .75s;
   animation-fill-mode: backwards;
   /* applies zero animation at start, useful with animation delay */ }
-
-.main-btn::after {
-  background-color: white; }
+  .main-btn::after {
+    background-color: white; }
 
 @keyframes moveRight {
   0% {
