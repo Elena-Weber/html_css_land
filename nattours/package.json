@@ -1,0 +1,17 @@
+{
+  "name": "nattours",
+  "version": "1.0.0",
+  "description": "Advanced CSS and Sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "Elena Weber",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
