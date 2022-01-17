@@ -1,0 +1,24 @@
+.header {
+    height: 95vh; /* occupies 95% of screen vertically */
+    background-image: linear-gradient(to right bottom, /* gradient on top of bg image */
+    $color-primary, $color-secondary),
+    url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80");
+    background-size: cover;
+    background-position: top; /* fixing background image on top */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo-pic {
+        height: 3.5rem;
+    }
+
+    &__logo-pic:hover {
+        animation: turning 1s ease-in-out;
+    }
+}

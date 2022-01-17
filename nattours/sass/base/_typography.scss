@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: bisque;
+    padding: 3rem;
+}
+
+.main {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* move text block with its center fixed */
+    text-align: center;
+
+    &__title {
+        color: $color-white;
+    }
+    
+    &__primary-title {
+        text-transform: uppercase;
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: moveRight;
+        animation-duration: 2s;
+        /* animation-delay: 2s; */
+        /* animation-iteration-count: 3; */
+        animation-timing-function: ease-out;
+    }
+    
+    &__secondary-title {
+        display: block;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 1.6rem;
+        animation: moveLeft 2s;
+        margin-bottom: 6rem;
+    }
+}

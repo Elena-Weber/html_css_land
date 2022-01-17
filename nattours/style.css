@@ -1,3 +1,37 @@
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes turning {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 *, *::after, *::before {
   /* valid for all elements */
   /* no margins and padding are added automatically to anything */
@@ -10,30 +44,14 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box; }
+
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: bisque;
-  padding: 3rem;
-  box-sizing: border-box; }
-
-.header {
-  height: 95vh;
-  /* occupies 95% of screen vertically */
-  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c7), url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80");
-  background-size: cover;
-  background-position: top;
-  /* fixing background image on top */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-  .header__logo {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo-pic {
-    height: 3.5rem; }
-  .header__logo-pic:hover {
-    animation: turning 1s ease-in-out; }
+  padding: 3rem; }
 
 .main {
   position: absolute;
@@ -105,36 +123,20 @@ body {
   .main-btn::after {
     background-color: white; }
 
-@keyframes moveRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveUp {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes turning {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
+.header {
+  height: 95vh;
+  /* occupies 95% of screen vertically */
+  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c7), url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80");
+  background-size: cover;
+  background-position: top;
+  /* fixing background image on top */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header__logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo-pic {
+    height: 3.5rem; }
+  .header__logo-pic:hover {
+    animation: turning 1s ease-in-out; }
