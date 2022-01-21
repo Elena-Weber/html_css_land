@@ -1,4 +1,5 @@
 .btn {
+    
     &:link, &:visited {
         text-transform: uppercase;
         text-decoration: none;
@@ -51,6 +52,7 @@
 }
 
 .btn-text {
+
     &:link, &:visited {
         font-size: $default-font-size;
         color: $color-primary;
@@ -60,14 +62,16 @@
         padding: 3px;
         transition: all .2s;
     }
+
     &:hover {
         background-color: $color-primary;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .15);
-        transform: translateY(-2px);
+        transform: translateY(-2px); // button moves up on hover
     }
+
     &:active {
         box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .15);
-        transform: translateY(0);
+        transform: translateY(0); // button returns to its initial position
     }
 }

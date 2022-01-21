@@ -1,7 +1,7 @@
 @mixin clearfix {
-    &::after {
+    &::after { // inserts "" after specified element
         content: "";
         display: table;
-        clear: both;
+        clear: both; // prevents element from floating left or right
     }
 }

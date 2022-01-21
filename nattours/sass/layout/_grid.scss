@@ -2,14 +2,14 @@
     max-width: $grid-width;
     margin: 0 auto;
 
-    &:not(:last-child) {
+    &:not(:last-child) { // except last element within .row
         margin-bottom: $gutter-vertical;
     }
 
-    @include clearfix;
+    @include clearfix; // adding mixin
 
-    [class^="col-"] {
-        float: left;
+    [class^="col-"] { // all elements whose class starts with "col-"
+        float: left; // content moves to the left border
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
@@ -17,6 +17,6 @@
     }
 
     .col-1-of-2 {
-        width: calc((100% - #{$gutter-horizontal}) / 2);
+        width: calc((100% - #{$gutter-horizontal}) / 2); // each column width
     }
 }
