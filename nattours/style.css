@@ -50,7 +50,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: bisque;
+  color: black;
   padding: 3rem; }
 
 .main {
@@ -81,6 +81,43 @@ body {
     animation: moveLeft 2s;
     margin-bottom: 6rem; }
 
+.container-heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #7ed56fc7, #28b485c7);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s; }
+  .container-heading:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-column {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.par {
+  font-size: 1.6rem; }
+  .par:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.utility-center-text {
+  text-align: center; }
+
+.utility-mb-big {
+  margin-bottom: 8rem; }
+
+.utility-mb-med {
+  margin-bottom: 4rem; }
+
+.utility-mb-small {
+  margin-bottom: 1.3rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -89,7 +126,7 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 2rem; }
+  font-size: 1.6rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -123,6 +160,25 @@ body {
   .main-btn::after {
     background-color: white; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #7ed56fc7;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #7ed56fc7;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #7ed56fc7;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .header {
   height: 95vh;
   /* occupies 95% of screen vertically */
@@ -140,3 +196,24 @@ body {
     height: 3.5rem; }
   .header__logo-pic:hover {
     animation: turning 1s ease-in-out; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+
+.about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
