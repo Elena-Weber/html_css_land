@@ -2,26 +2,26 @@
     position: relative;
 
     &__photo {
-        width: 75%;
+        width: 65%;
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .4);
         position: absolute; // we're gonna be moving this class' elements
         z-index: 10;
         transition: all .2s; //goes together with transform below
-        outline-offset: 20px; // works together with outline below and creates empty space b/n image and border (= outline)
+        outline-offset: 15px; // works together with outline below and creates empty space b/n image and border (= outline)
 
         &--p1 {
             left: 0;
-            top: -2rem;
+            top: -1.5rem;
         }
 
         &--p2 {
             right: 0;
-            top: 20rem;
+            top: 10rem;
         }
 
         &--p3 {
-            left: 50%;
-            top: 5rem;
+            left: 70%;
+            top: 2rem;
         }
 
         &:hover {
@@ -32,7 +32,7 @@
         }
     }
 
-    &:hover &__photo:not(:hover) { // for photos not hovered
+    &:hover &__photo:not(:hover) { // for pictures not hovered
         transform: scale(.95);
     }
 }
