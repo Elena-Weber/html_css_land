@@ -1,18 +1,19 @@
 .card {
-    perspective: 150rem;
+    perspective: 150rem; // makes rotation smoother
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
 
     &__side {
         height: 50rem;
-        transition: all .8s ease;
+        transition: all 1s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        backface-visibility: hidden; // sp you don't see back from front
+        backface-visibility: hidden; // so you don't see back from front
         border-radius: 3px;
+        overflow: hidden; // makes image's corners hidden so that border-radius works fine
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
 
         &--front {
@@ -20,7 +21,6 @@
         }
 
         &--back {
-            background-color: slategrey;
             transform: rotateY(180deg);
 
             &-1 {
@@ -32,17 +32,79 @@
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-yellow, $color-orange);
+                background-image: linear-gradient(to right bottom, $color-white, $color-black);
             }
         }
     }
 
     &:hover &__side--front {
-        transform: rotateY(-180deg);
+        transform: rotateY(-180deg); // compensates rotation
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+    &__image {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen; // blends gradient and image
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+        &-1 {
+            background-image: linear-gradient(to right bottom, $color-yellow, $color-orange), url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+        }
+
+        &-2 {
+            background-image: url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+        }
+
+        &-3 {
+            background-image: url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        color: $color-white;
+        width: 75%; // limits occupied width
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone; // applies padding to all sides of every word
+        -webkit-box-decoration-break: clone;
+
+        &-1 {
+            background-image: linear-gradient(to right bottom, rgba($color-yellow, .85), rgba($color-orange, .85));
+        }
+    }
+
+    &__details {
+        padding: 2rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-orange;
+                }
+            }
+        }
     }
 }
 
