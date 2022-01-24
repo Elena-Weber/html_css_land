@@ -118,6 +118,9 @@ body {
 .utility-mb-small {
   margin-bottom: 1.3rem; }
 
+.utility-mt-big {
+  margin-top: 6rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -138,6 +141,18 @@ body {
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.205); }
+
+.btn--white {
+  background-color: white;
+  color: gray; }
+  .btn--white::after {
+    background-color: white; }
+
+.btn--green {
+  background-color: #28b485c7;
+  color: white; }
+  .btn--green::after {
+    background-color: #28b485c7; }
 
 .btn::after {
   content: "";
@@ -214,13 +229,15 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .card__image-1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
     .card__image-2 {
-      background-image: url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJlYWNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
     .card__image-3 {
-      background-image: url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
+      background-image: linear-gradient(to right bottom, white, rgba(0, 0, 0, 0.205)), url("https://images.unsplash.com/photo-1470114756101-d58df39917b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHdvb2RzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -237,6 +254,10 @@ body {
     -webkit-box-decoration-break: clone; }
     .card__heading-span-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading-span-2 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+    .card__heading-span-3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0.85)); }
   .card__details {
     padding: 2rem; }
     .card__details ul {
@@ -249,6 +270,23 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #ff7730; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: white; }
+    .card__price-before {
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+    .card__price-itself {
+      font-size: 6rem;
+      font-weight: 100; }
 
 .composition {
   position: relative; }
@@ -350,5 +388,5 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -15rem; }

@@ -26,6 +26,24 @@
         box-shadow: 0 .5rem 1rem $color-black;
     }
     
+    &--white {
+        background-color: $color-white;
+        color: gray;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-secondary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-secondary;
+        }
+    }
+
     &::after {
         content: "";
         display: inline-block;
@@ -47,7 +65,7 @@
     animation-fill-mode: backwards; /* applies zero animation at start, useful with animation delay */
 
     &::after {
-    background-color: $color-white;
+        background-color: $color-white;
     }
 }
 
