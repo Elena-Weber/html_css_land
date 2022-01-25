@@ -452,3 +452,17 @@ body {
 .section-reviews {
   position: relative;
   padding: 15rem 0; }
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c7); }
+
+.booking {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("https://images.unsplash.com/photo-1544731059-8485db0c69e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxoaWtpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 400px; }
+  .booking-form {
+    width: 50%;
+    padding: 6rem; }
