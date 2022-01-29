@@ -1,0 +1,75 @@
+.form {
+    &-group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &-input {
+        font-size: 1.5rem;
+        font-family: inherit; // input doesn't inherit font qualities automatically
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 3px;
+        background-color: rgba($color: $color-white, $alpha: .5);
+        border: none;
+        border-bottom: 3px solid transparent; // compensates for green border-bottom
+        width: 90%;
+        display: block; // occupies whole line
+        transition: all .3s; // smooth transition between focused and unfocused input
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .1);
+            border-bottom: 3px solid $color-primary;
+
+            &:invalid { // input validation
+                border-bottom: 3px solid $color-orange;
+            }
+        }
+
+        &::placeholder, ::-webkit-input-placeholder {
+            color: darkgray;
+        }
+    }
+
+    &-label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &-input:placeholder-shown + &-label { // siblings in the order they're in html
+        opacity: 0; // placeholder is invisible before typing
+        visibility: hidden;
+        transform: translateY(-4rem); // placeholder moves down under input
+    }
+
+    &-radio-group {
+        width: 49%;
+        display: inline-block;
+    }
+
+    &-radio-label {
+        font-size: $default-font-size;
+        cursor: pointer;
+        position: relative;
+        padding: 5rem;
+    }
+
+    &-radio-pseudo-btn {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &::after {
+            
+        }
+    }
+}
