@@ -51,11 +51,15 @@
         display: inline-block;
     }
 
+    &-radio-btn { // hide real radio btns
+        display: none;
+    }
+
     &-radio-label {
         font-size: $default-font-size;
         cursor: pointer;
         position: relative;
-        padding: 5rem;
+        padding-left: 4.5rem;
     }
 
     &-radio-pseudo-btn {
@@ -64,12 +68,29 @@
         border: 5px solid $color-primary;
         border-radius: 50%;
         display: inline-block;
-        position: absolute;
-        top: 0;
+        position: absolute; // position of pseudo radio btn
+        top: -.5rem;
         left: 0;
 
-        &::after {
-            
+        &::after { // inner circle inside pseudo radio btn
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity .1s;
         }
+    }
+
+    &-radio-btn:checked ~ &-radio-label &-radio-pseudo-btn::after {
+        // show pseudo btn's inner circle when real radio btn is checked
+        // (works for radio btns and select btns only)
+        opacity: 1;
     }
 }

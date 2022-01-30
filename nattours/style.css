@@ -107,19 +107,19 @@ body {
     margin-bottom: 3rem; }
 
 .utility-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .utility-mb-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .utility-mb-med {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .utility-mb-small {
-  margin-bottom: 1.3rem; }
+  margin-bottom: 1.3rem !important; }
 
 .utility-mt-big {
-  margin-top: 6rem; }
+  margin-top: 6rem !important; }
 
 .bg-video {
   position: absolute;
@@ -135,7 +135,7 @@ body {
     width: 100%;
     object-fit: cover; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -143,7 +143,9 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -152,7 +154,7 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.205); }
 
@@ -388,11 +390,14 @@ body {
   width: 49%;
   display: inline-block; }
 
+.form-radio-btn {
+  display: none; }
+
 .form-radio-label {
   font-size: 1.6rem;
   cursor: pointer;
   position: relative;
-  padding: 5rem; }
+  padding-left: 4.5rem; }
 
 .form-radio-pseudo-btn {
   height: 3rem;
@@ -401,8 +406,24 @@ body {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: -.5rem;
   left: 0; }
+  .form-radio-pseudo-btn::after {
+    content: "";
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7ed56fc7;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .1s; }
+
+.form-radio-btn:checked ~ .form-radio-label .form-radio-pseudo-btn::after {
+  opacity: 1; }
 
 .review {
   width: 75%;
@@ -519,7 +540,7 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 400px; }
+  height: 500px; }
   .booking-form {
     width: 50%;
     padding: 6rem; }
