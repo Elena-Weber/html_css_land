@@ -1,0 +1,83 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: .8);
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target { // this div becomes visible when link leading to it is clicked
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-close {
+
+        &:link, &:visited {
+            color: $color-secondary;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+        }
+    }
+
+    &-content {
+        @include absoluteCenter(); // from mixins
+
+        width: 75%;
+        background-color: $color-white;
+        height: 50rem;
+        box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: .2);
+        border-radius: 3px;
+        display: table; // so it considers 2 divs inside it its table cells
+        overflow: hidden;
+    }
+
+    &-left {
+        width: 33.333%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &-right {
+        width: 66.666%;
+        display: table-cell;
+        padding: 3rem 5rem;
+    }
+
+    &-img {
+        display: block;
+        width: 100%;
+    }
+
+    // &-heading {
+
+    // }
+
+    // &-text {
+
+    // }
+
+    &-p {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2; // divide text into 2 columns
+        -moz-column-gap: 4rem;
+        -webkit-column-gap: 4rem;
+        column-gap: 4rem;
+        -moz-column-rule: 1px solid lightgray;
+        -webkit-column-rule: 1px solid lightgray;
+        column-rule: 1px solid lightgray; // division between columns
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto; // automatically defines where to place hyphens
+    }
+}

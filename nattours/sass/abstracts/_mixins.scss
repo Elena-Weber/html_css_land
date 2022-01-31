@@ -5,3 +5,10 @@
         clear: both; // prevents element from floating left or right
     }
 }
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
