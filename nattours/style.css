@@ -507,25 +507,6 @@ body {
     width: 80%;
     float: right; }
 
-.header {
-  height: 95vh;
-  /* occupies 95% of screen vertically */
-  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c7), url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80");
-  background-size: cover;
-  background-position: top;
-  /* fixing background image on top */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-  .header__logo {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo-pic {
-    height: 3.5rem; }
-  .header__logo-pic:hover {
-    animation: turning 1s ease-in-out; }
-
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -545,6 +526,132 @@ body {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
+
+.header {
+  height: 95vh;
+  /* occupies 95% of screen vertically */
+  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c7), url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80");
+  background-size: cover;
+  background-position: top;
+  /* fixing background image on top */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header__logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo-pic {
+    height: 3.5rem; }
+  .header__logo-pic:hover {
+    animation: turning 1s ease-in-out; }
+
+.navi-checkbox {
+  display: none; }
+
+.navi-btn {
+  background-color: white;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
+
+.navi-bg {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56fc7, #28b485c7);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.navi-navi {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navi-ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navi-li {
+  margin: 1rem; }
+
+.navi-link:link, .navi-link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 3rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 230%;
+  transition: all 0.4s; }
+
+.navi-link:hover, .navi-link:active {
+  background-position: 100%;
+  color: #7ed56fc7;
+  transform: translateX(1rem); }
+
+.navi-checkbox:checked ~ .navi-bg {
+  transform: scale(80); }
+
+.navi-checkbox:checked ~ .navi-navi {
+  opacity: 1;
+  width: 100%; }
+
+.navi-icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navi-icon, .navi-icon::before, .navi-icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: darkgray;
+    display: inline-block;
+    left: 2rem; }
+  .navi-icon::before, .navi-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navi-icon::before {
+    top: -1rem; }
+  .navi-icon::after {
+    top: 1rem; }
+
+.navi-btn:hover .navi-icon:before {
+  top: -1.2rem; }
+
+.navi-btn:hover .navi-icon:after {
+  top: 1.2rem; }
+
+.navi-checkbox:checked + .navi-btn .navi-icon {
+  background-color: transparent; }
+
+.navi-checkbox:checked + .navi-btn .navi-icon::before {
+  transform: rotate(135deg);
+  top: 0; }
+
+.navi-checkbox:checked + .navi-btn .navi-icon::after {
+  transform: rotate(-135deg);
+  top: 0; }
 
 .about {
   background-color: #f7f7f7;
