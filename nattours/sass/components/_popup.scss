@@ -10,22 +10,6 @@
     visibility: hidden;
     transition: all .3s;
 
-    &:target { // this div becomes visible when link leading to it is clicked
-        opacity: 1;
-        visibility: visible;
-    }
-
-    &-close {
-
-        &:link, &:visited {
-            color: $color-secondary;
-            position: absolute;
-            top: 2.5rem;
-            right: 2.5rem;
-            font-size: 3rem;
-        }
-    }
-
     &-content {
         @include absoluteCenter(); // from mixins
 
@@ -36,6 +20,9 @@
         border-radius: 3px;
         display: table; // so it considers 2 divs inside it its table cells
         overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .5s .2s;
     }
 
     &-left {
@@ -55,14 +42,6 @@
         width: 100%;
     }
 
-    // &-heading {
-
-    // }
-
-    // &-text {
-
-    // }
-
     &-p {
         font-size: 1.4rem;
         margin-bottom: 4rem;
@@ -79,5 +58,34 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto; // automatically defines where to place hyphens
+    }
+
+    &:target { // this div becomes visible when link leading to it is clicked
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &-content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &-close {
+
+        &:link, &:visited {
+            color: $color-secondary;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-black;
+        }
     }
 }
