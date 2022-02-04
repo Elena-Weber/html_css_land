@@ -1,0 +1,14 @@
+*, *::after, *::before { /* valid for all elements */
+    /* no margins and padding are added automatically to anything */
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* inherits from body */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}

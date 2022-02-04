@@ -1,0 +1,141 @@
+.navi {
+
+    &-checkbox {
+        display: none;
+    }
+
+    &-btn {
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        position: fixed; // fixes element on page
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
+        cursor: pointer;
+    }
+
+    &-bg {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed; // fixes element on page
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient($color-primary, $color-secondary);
+        z-index: 1000; // so it stays on top of everything
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        // transform: scale(80);
+    }
+
+    &-navi {
+        height: 100vh;
+        width: 0;
+        position: fixed; // fixes element on page
+        top: 0;
+        right: 0;
+        z-index: 1500;
+        // opacity: 0;
+        // background-color: red;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &-ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-li {
+        margin: 1rem;
+    }
+
+    &-link {
+
+        &:link, &:visited {
+            display: inline-block; // transform translate dosen't work right without it
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 3rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 230%; // so that bg is tranparent at first i.e. occupies 50% of bg-image
+            transition: all 0.4s;
+        }
+
+        &:hover, &:active {
+            background-position: 100%; // white bg covers link
+            color: $color-primary;
+            transform: translateX(1rem);
+        }
+    }
+
+    &-checkbox:checked ~ &-bg { // toggle navi open-close
+        transform: scale(80);
+    }
+
+    &-checkbox:checked ~ &-navi { // toggle navi open-close
+        opacity: 1;
+        width: 100%;
+    }
+    
+    &-icon {
+        position: relative;
+        margin-top: 3.5rem;
+
+        &, &::before, &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: darkgray;
+            display: inline-block;
+            left: 2rem;
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -1rem;
+        }
+
+        &::after {
+            top: 1rem;
+        }
+
+    }
+
+    &-btn:hover &-icon:before {
+        top: -1.2rem;
+    }
+
+    &-btn:hover &-icon:after {
+        top: 1.2rem;
+    }
+
+    &-checkbox:checked + &-btn &-icon { // when checkbox is selected, select also btn and its child (icon)
+        background-color: transparent;
+    }
+
+    &-checkbox:checked + &-btn &-icon::before { // when checkbox is selected, select also btn and its child (icon::before)
+        transform: rotate(135deg);
+        top: 0;
+    }
+
+    &-checkbox:checked + &-btn &-icon::after { // when checkbox is selected, select also btn and its child (icon::after)
+        transform: rotate(-135deg);
+        top: 0;
+    }
+}

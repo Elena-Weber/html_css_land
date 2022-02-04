@@ -1,0 +1,38 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 65%;
+        box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .4);
+        position: absolute; // we're gonna be moving this class' elements
+        z-index: 10;
+        transition: all .2s; //goes together with transform below
+        outline-offset: 15px; // works together with outline below and creates empty space b/n image and border (= outline)
+
+        &--p1 {
+            left: 0;
+            top: -1.5rem;
+        }
+
+        &--p2 {
+            right: 0;
+            top: 10rem;
+        }
+
+        &--p3 {
+            left: 70%;
+            top: 2rem;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-primary; // similar to border, works with outline-offset above
+            transform: scale(1.05) translateY(-.5px);
+            box-shadow: 0 2.5rem 4rem rgba($color: #000000, $alpha: .5);
+            z-index: 20;
+        }
+    }
+
+    &:hover &__photo:not(:hover) { // for pictures not hovered
+        transform: scale(.95);
+    }
+}
