@@ -7,6 +7,10 @@
     box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
     transition: transform .3s;
 
+    @include responsive(tablet-portrait) {
+        padding: 2rem;
+    }
+
     &:hover {
         transform: translateY(-1.5rem) scale(1.05);
     }
@@ -19,5 +23,9 @@
         background-clip: text; // clips gradient to text's shape
         -webkit-background-clip: text;
         color: transparent; // so you can see gradient, not text color
+
+        @include responsive(tablet-portrait) {
+            margin-bottom: 0;
+        }
     }
 }

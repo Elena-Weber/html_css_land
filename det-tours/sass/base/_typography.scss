@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: black;
-    padding: 3rem;
+    
 }
 
 .main {
@@ -16,7 +16,7 @@ body {
     &__title {
         color: $color-white;
     }
-    
+
     &__primary-title {
         text-transform: uppercase;
         display: block;
@@ -28,6 +28,15 @@ body {
         /* animation-delay: 2s; */
         /* animation-iteration-count: 3; */
         animation-timing-function: ease-out;
+
+        @include responsive(tablet-portrait) {
+            letter-spacing: 2.5rem;
+        }
+
+        @include responsive(mobile-phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
     
     &__secondary-title {
@@ -37,6 +46,15 @@ body {
         letter-spacing: 1.6rem;
         animation: moveLeft 2s;
         margin-bottom: 6rem;
+
+        @include responsive(tablet-portrait) {
+            letter-spacing: 1rem;
+        }
+
+        @include responsive(mobile-phone) {
+            letter-spacing: .5rem;
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -51,6 +69,14 @@ body {
     -webkit-background-clip: text;
     color: transparent; // so you can see gradient, not text color
     transition: all .2s;
+
+    @include responsive(tablet-portrait) {
+        font-size: 3rem;
+    }
+
+    @include responsive(mobile-phone) {
+        font-size: 2.5rem;
+    }
     
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1); // skewing text

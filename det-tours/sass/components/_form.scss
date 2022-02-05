@@ -16,6 +16,10 @@
         display: block; // occupies whole line
         transition: all .3s; // smooth transition between focused and unfocused input
 
+        @include responsive(tablet-portrait) {
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .1);
@@ -49,6 +53,11 @@
     &-radio-group {
         width: 49%;
         display: inline-block;
+
+        @include responsive(tablet-portrait) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &-radio-btn { // hide real radio btns

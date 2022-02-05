@@ -42,7 +42,7 @@
         <div class="main">
             <h1 class="main__title">
                 <span class="main__primary-title">Det-Tours</span>
-                <span class="main__secondary-title">Detroit at its best</span>
+                <span class="main__secondary-title">Detroit at its finest</span>
             </h1>
             <a href="#" class="btn main-btn">Discover our tours</a>
         </div>
@@ -66,8 +66,16 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhpa2luZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="Photo 1" class="composition__photo composition__photo--p1">
-                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvcmVzdHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="Photo 2" class="composition__photo composition__photo--p2">
+                        <!-- the browser chooses which image to show based on screen resolution -->
+                        <img srcset="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjc0fHxoaWtpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60 300w, https://images.unsplash.com/photo-1536439660512-4c926679ca62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 1000w" 
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" alt="mountains" class="composition__photo composition__photo--p1" 
+                            src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhpa2luZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60">
+                        <img srcset="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjc0fHxoaWtpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60 300w, https://images.unsplash.com/photo-1536439660512-4c926679ca62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 1000w" 
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="mountains" class="composition__photo composition__photo--p2" 
+                            src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhpa2luZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60">
+
+                        <!-- <img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhpa2luZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="Photo 1" class="composition__photo composition__photo--p1"> -->
+                        <!-- <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvcmVzdHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="Photo 2" class="composition__photo composition__photo--p2"> -->
                         <img src="https://images.unsplash.com/photo-1553570739-330b8db8a925?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2VhfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Photo 3" class="composition__photo composition__photo--p3">
                     </div>
                 </div>
@@ -311,7 +319,6 @@
     </main>
     <footer class="footer">
         <div class="footer-logo">
-            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGhpa2luZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" class="footer-img" alt="Logo">
             <i class="feature-box__icon icon-basic-globe"></i>
         </div>
         <div class="row">

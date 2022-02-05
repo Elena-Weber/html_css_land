@@ -12,3 +12,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+// Breakpoints for responsive design:
+// 0 - 600px <- mobile phone
+// 600px - 900px <- tablet portrait
+// 900px - 1200px <- tablet landscape
+// 1200px - 1800px <- normal screen for which the code is typically written
+// 1800px + <- big desktop
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == mobile-phone {
+        @media (max-width: 37.5em) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet-portrait {
+        @media (max-width: 56.25em) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet-landscape {
+        @media (max-width: 75em) {
+            @content
+        }
+    };
+    @if $breakpoint == big-screen {
+        @media (min-width: 112.5em) {
+            @content
+        }
+    };
+}
