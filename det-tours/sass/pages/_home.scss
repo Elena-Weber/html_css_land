@@ -10,9 +10,9 @@
 
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, /* gradient on top of bg image */
-    $color-primary, $color-secondary),
-    url("https://images.unsplash.com/photo-1536685632249-7e210d6e381e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+    background-image: linear-gradient(to right top, /* gradient on top of bg image */
+    $color-black, $color-gray),
+    url("https://images.unsplash.com/photo-1573836023239-f67547a94297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     background-size: cover;
     margin-top: -12rem;
     transform: skewY(-7deg); // distorts the section
@@ -59,7 +59,7 @@
         rgba($color: #fff, $alpha: .9) 0%, 
         rgba($color: #fff, $alpha: .9) 50%, 
         transparent 50%), // makes image 100% visible
-        url("https://images.unsplash.com/photo-1544731059-8485db0c69e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxoaWtpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+        url("https://images.unsplash.com/photo-1568267938179-f50e67de5ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80");
     background-size: 100%; //how much image occupies
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .2);

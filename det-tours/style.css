@@ -67,7 +67,7 @@ body {
 
 .main {
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* move text block with its center fixed */
@@ -78,7 +78,8 @@ body {
     text-transform: uppercase;
     display: block;
     font-size: 6rem;
-    font-weight: 500;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px gray;
     letter-spacing: 3.5rem;
     animation-name: moveRight;
     animation-duration: 2s;
@@ -95,10 +96,11 @@ body {
   .main__secondary-title {
     display: block;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 500;
+    text-shadow: 3px 3px 3px gray;
     letter-spacing: 2.8rem;
     animation: moveLeft 2s;
-    margin-bottom: 6rem; }
+    margin-bottom: 35rem; }
     @media (max-width: 56.25em) {
       .main__secondary-title {
         letter-spacing: 1rem; } }
@@ -187,14 +189,14 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.205); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active, .btn:focus {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.205); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
   background-color: white;
@@ -273,7 +275,7 @@ body {
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, white, rgba(0, 0, 0, 0.205)); }
+        background-image: linear-gradient(to right bottom, white, rgba(0, 0, 0, 0.2)); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -291,7 +293,7 @@ body {
     .card__image-2 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJlYWNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
     .card__image-3 {
-      background-image: linear-gradient(to right bottom, white, rgba(0, 0, 0, 0.205)), url("https://images.unsplash.com/photo-1470114756101-d58df39917b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHdvb2RzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
+      background-image: linear-gradient(to right bottom, white, rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1470114756101-d58df39917b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHdvb2RzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -594,7 +596,7 @@ body {
     transition: all .2s;
     line-height: 1; }
   .popup-close:hover {
-    color: rgba(0, 0, 0, 0.205); }
+    color: rgba(0, 0, 0, 0.2); }
 
 .review {
   width: 75%;
@@ -744,7 +746,7 @@ body {
 .header {
   height: 95vh;
   /* occupies 95% of screen vertically */
-  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c7), url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80");
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.2), rgba(128, 128, 128, 0.8)), url("https://images.unsplash.com/photo-1598038748999-1174fb7d2562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-size: cover;
   background-position: top;
   /* fixing background image on top */
@@ -753,10 +755,10 @@ body {
   position: relative; }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.205), white), url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80"); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), white), url("https://images.unsplash.com/photo-1598038748999-1174fb7d2562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); } }
   @media (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, white, rgba(0, 0, 0, 0.205)), url("https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80"); } }
+      background-image: linear-gradient(to right bottom, white, rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1598038748999-1174fb7d2562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -909,7 +911,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56fc7, #28b485c7), url("https://images.unsplash.com/photo-1536685632249-7e210d6e381e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.2), rgba(128, 128, 128, 0.8)), url("https://images.unsplash.com/photo-1573836023239-f67547a94297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-size: cover;
   margin-top: -12rem;
   transform: skewY(-7deg); }
@@ -942,7 +944,7 @@ body {
       padding: 10rem 0; } }
 
 .booking {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("https://images.unsplash.com/photo-1544731059-8485db0c69e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxoaWtpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("https://images.unsplash.com/photo-1568267938179-f50e67de5ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80");
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }

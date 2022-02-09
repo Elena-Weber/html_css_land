@@ -3,12 +3,12 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: black;
-    
 }
 
 .main {
     position: absolute;
-    top: 30%;
+    top: 45%;
+    // top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); /* move text block with its center fixed */
     text-align: center;
@@ -21,7 +21,8 @@ body {
         text-transform: uppercase;
         display: block;
         font-size: 6rem;
-        font-weight: 500;
+        font-weight: 700;
+        text-shadow: 5px 5px 5px gray;
         letter-spacing: 3.5rem;
         animation-name: moveRight;
         animation-duration: 2s;
@@ -42,10 +43,12 @@ body {
     &__secondary-title {
         display: block;
         font-size: 3rem;
-        font-weight: 300;
+        font-weight: 500;
+        text-shadow: 3px 3px 3px gray;
         letter-spacing: 2.8rem;
         animation: moveLeft 2s;
-        margin-bottom: 6rem;
+        margin-bottom: 35rem;
+        // margin-bottom: 6rem;
 
         @include responsive(tablet-portrait) {
             letter-spacing: 1rem;
