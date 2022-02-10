@@ -37,11 +37,11 @@
     }
 
     &--green {
-        background-color: $color-secondary;
+        background-color: $color-primary;
         color: $color-white;
 
         &::after {
-            background-color: $color-secondary;
+            background-color: $color-primary;
         }
     }
 
@@ -61,7 +61,7 @@
 
 .main-btn {
     background-color: $color-white;
-    color: teal;
+    color: $color-primary;
     animation: moveUp 1s ease-out .75s;
     animation-fill-mode: backwards; /* applies zero animation at start, useful with animation delay */
 
@@ -78,7 +78,7 @@
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid $color-primary;
-        padding: 3px;
+        padding: 5px;
         transition: all .2s;
     }
 

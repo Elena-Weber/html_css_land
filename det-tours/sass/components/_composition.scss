@@ -2,12 +2,12 @@
     position: relative;
 
     &__photo {
-        width: 65%;
+        width: 50%;
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .4);
         position: absolute; // we're gonna be moving this class' elements
         z-index: 10;
         transition: all .2s; //goes together with transform below
-        outline-offset: 15px; // works together with outline below and creates empty space b/n image and border (= outline)
+        outline-offset: 10px; // works together with outline below and creates empty space b/n image and border (= outline)
 
         @include responsive(tablet-portrait) {
             float: left;
@@ -27,7 +27,7 @@
         }
 
         &--p2 {
-            right: 0;
+            right: 10rem;
             top: 10rem;
 
             @include responsive(tablet-portrait) {
@@ -38,7 +38,7 @@
         }
 
         &--p3 {
-            left: 70%;
+            left: 65%;
             top: 2rem;
 
             @include responsive(tablet-portrait) {
@@ -49,7 +49,7 @@
         }
 
         &:hover {
-            outline: 1.5rem solid $color-primary; // similar to border, works with outline-offset above
+            outline: .5rem solid $color-primary; // similar to border, works with outline-offset above
             transform: scale(1.05) translateY(-.5px);
             box-shadow: 0 2.5rem 4rem rgba($color: #000000, $alpha: .5);
             z-index: 20;
