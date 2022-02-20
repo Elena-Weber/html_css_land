@@ -99,7 +99,7 @@ body {
     font-size: 3rem;
     font-weight: 500;
     text-shadow: 3px 3px 3px gray;
-    letter-spacing: 2.8rem;
+    letter-spacing: 2.2rem;
     animation: moveLeft 2s;
     margin-bottom: 35rem; }
     @media only screen and (max-width: 56.25em) {
@@ -169,7 +169,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15;
+  opacity: .25;
   overflow: hidden; }
   .bg-video-content {
     height: 100%;
