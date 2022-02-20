@@ -35,3 +35,8 @@ body {
         padding: 0;
     }
 }
+
+::selection { // when text is selected with cursor
+    background-color: $color-primary;
+    color: $color-white;
+}
