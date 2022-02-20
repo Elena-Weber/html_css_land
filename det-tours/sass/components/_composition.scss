@@ -9,6 +9,14 @@
         transition: all .2s; //goes together with transform below
         outline-offset: 10px; // works together with outline below and creates empty space b/n image and border (= outline)
 
+        @include responsive(tablet-landscape) {
+            width: 40%;
+            // float: left;
+            // position: relative;
+            // width: 33.33333%;
+            // box-shadow: 0 1.5rem 3rem rgba($color: #000000, $alpha: .2);
+        }
+
         @include responsive(tablet-portrait) {
             float: left;
             position: relative;

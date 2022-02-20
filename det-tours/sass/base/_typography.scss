@@ -31,11 +31,13 @@ body {
         animation-timing-function: ease-out;
 
         @include responsive(tablet-landscape) {
-            letter-spacing: 1rem;
+            letter-spacing: 1.5rem;
+            font-size: 5rem;
         }
 
         @include responsive(tablet-portrait) {
-            letter-spacing: 2.5rem;
+            letter-spacing: 1rem;
+            
         }
 
         @include responsive(mobile-phone) {
@@ -53,6 +55,10 @@ body {
         animation: moveLeft 2s;
         margin-bottom: 35rem;
         // margin-bottom: 6rem;
+
+        @include responsive(tablet-landscape) {
+            letter-spacing: 1.5rem;
+        }
 
         @include responsive(tablet-portrait) {
             letter-spacing: 1rem;

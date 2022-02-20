@@ -1,7 +1,7 @@
 .card {
-    perspective: 150rem; // makes rotation smoother
     -webkit-perspective: 150rem;
     -moz-perspective: 150rem;
+    perspective: 150rem; // makes rotation smoother
     position: relative;
     height: 50rem;
 
@@ -78,13 +78,13 @@
         right: 2rem;
         text-align: right;
         color: $color-white;
-        width: 75%; // limits occupied width
+        width: 90%; // limits occupied width
     }
 
     &__heading-span {
         padding: 1rem 1.5rem;
-        box-decoration-break: clone; // applies padding to all sides of every word
         -webkit-box-decoration-break: clone;
+        box-decoration-break: clone; // applies padding to all sides of every word
 
         &-1 {
             background-image: linear-gradient(to right bottom, rgba($color-primary, .65), rgba($color-secondary, .65));
@@ -104,7 +104,7 @@
 
         ul {
             list-style: none;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
 
             li {

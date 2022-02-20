@@ -1,6 +1,6 @@
 .about {
     background-color: $color-about;
-    padding: 25rem 0;
+    padding: 25rem 1rem;
     margin-top: -20rem;
 
     @include responsive(tablet-portrait) {
@@ -9,7 +9,7 @@
 }
 
 .section-features {
-    padding: 20rem 0;
+    padding: 20rem 1rem;
     background-image: linear-gradient(to right top, /* gradient on top of bg image */
     $color-black, $color-gray),
     url("https://images.unsplash.com/photo-1573836023239-f67547a94297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
@@ -28,7 +28,7 @@
 
 .section-tours {
     background-color: $color-about;
-    padding: 25rem 0 15rem 0;
+    padding: 25rem 1rem 15rem 1rem;
     margin-top: -15rem;
 
     @include responsive(tablet-portrait) {
@@ -46,8 +46,12 @@
 }
 
 .section-booking {
-    padding: 15rem 0;
+    padding: 15rem 1rem;
     background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+
+    // @include responsive(tablet-landscape) {
+    //     padding: 5rem 0;
+    // }
 
     @include responsive(tablet-portrait) {
         padding: 10rem 0;
@@ -56,8 +60,8 @@
 
 .booking {
     background-image: linear-gradient(105deg,
-        rgba($color: #fff, $alpha: .9) 0%, 
-        rgba($color: #fff, $alpha: .9) 50%, 
+        rgba($color: #fff, $alpha: 1) 0%, 
+        rgba($color: #fff, $alpha: .2) 50%, 
         transparent 50%), // makes image 100% visible
         url("https://images.unsplash.com/photo-1568267938179-f50e67de5ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80");
     background-size: 100%; //how much image occupies
@@ -66,18 +70,18 @@
 
     @include responsive(tablet-landscape) {
         background-image: linear-gradient(105deg,
-        rgba($color: #fff, $alpha: .9) 0%, 
-        rgba($color: #fff, $alpha: .9) 65%, 
+        rgba($color: #fff, $alpha: 1) 0%, 
+        rgba($color: #fff, $alpha: .2) 65%, 
         transparent 65%), // makes image 100% visible
-        url("https://images.unsplash.com/photo-1544731059-8485db0c69e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxoaWtpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+        url("https://images.unsplash.com/photo-1568267938179-f50e67de5ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80");
         background-size: cover;
     }
 
     @include responsive(tablet-portrait) {
         background-image: linear-gradient(to right,
-        rgba($color: #fff, $alpha: .9) 0%, 
-        rgba($color: #fff, $alpha: .9) 100%),
-        url("https://images.unsplash.com/photo-1544731059-8485db0c69e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxoaWtpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+        rgba($color: #fff, $alpha: 1) 0%, 
+        rgba($color: #fff, $alpha: .3) 100%),
+        url("https://images.unsplash.com/photo-1568267938179-f50e67de5ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80");
         background-size: cover;
     }
 
@@ -87,6 +91,10 @@
 
         @include responsive(tablet-landscape) {
             width: 65%;
+        }
+
+        @include responsive(tablet-portrait) {
+            width: 100%;
         }
     }
 }
