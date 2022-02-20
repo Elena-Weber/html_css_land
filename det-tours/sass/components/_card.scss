@@ -1,5 +1,6 @@
 .card {
     perspective: 150rem; // makes rotation smoother
+    -webkit-perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
@@ -11,7 +12,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        backface-visibility: hidden; // so you don't see back from front
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; // so you don't see back when looking at front
         border-radius: 3px;
         overflow: hidden; // makes image's corners hidden so that border-radius works fine
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);

@@ -9,7 +9,9 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) { // 600px
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), // 600px
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
         background-image: linear-gradient(to right bottom,
         $color-black, $color-white),
         url("https://images.unsplash.com/photo-1598038748999-1174fb7d2562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");

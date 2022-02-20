@@ -246,6 +246,7 @@ body {
 
 .card {
   perspective: 150rem;
+  -webkit-perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem; }
@@ -256,6 +257,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -526,11 +528,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 3000;
   opacity: 0;
   visibility: hidden;
   transition: all .3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      -moz-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px); } }
   .popup-content {
     position: absolute;
     top: 50%;
@@ -547,7 +554,7 @@ body {
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s; }
   .popup-left {
-    width: 33.333%;
+    width: 33.3333333333%;
     display: table-cell;
     vertical-align: middle; }
   .popup-right {
@@ -643,6 +650,7 @@ body {
     font-size: 1.5rem;
     opacity: 0;
     transition: all .5s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
   .review:hover .review-caption {
     opacity: 1;
@@ -747,7 +755,7 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), white), url("https://images.unsplash.com/photo-1598038748999-1174fb7d2562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); } }
   @media (min-width: 125em) {
