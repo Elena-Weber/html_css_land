@@ -26,15 +26,15 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-yellow, $color-orange);
+                background-image: linear-gradient(to right bottom, $color-dark-black, $color-white);
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-blue, $color-violet);
+                background-image: linear-gradient(to right bottom, $color-dark-black, $color-gray);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-white, $color-black);
+                background-image: linear-gradient(to right bottom, $color-white, $color-dark-black);
             }
         }
     }
@@ -51,21 +51,21 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen; // blends gradient and image
-        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
 
         &-1 {
-            background-image: linear-gradient(to right bottom, $color-yellow, $color-orange), url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+            background-image: linear-gradient(to right bottom, $color-black, $color-white), url("https://images.unsplash.com/photo-1566876224648-a557eb52ed54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGRldHJvaXR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
         }
 
         &-2 {
-            background-image: linear-gradient(to right bottom, $color-blue, $color-violet), url("https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJlYWNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+            background-image: linear-gradient(to right bottom, $color-black, $color-white), url("https://images.unsplash.com/photo-1574295879329-8a6eb9aec17b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGRldHJvaXR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
         }
 
         &-3 {
-            background-image: linear-gradient(to right bottom, $color-white, $color-black), url("https://images.unsplash.com/photo-1470114756101-d58df39917b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHdvb2RzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+            background-image: linear-gradient(to right bottom, $color-black, $color-white), url("https://images.unsplash.com/photo-1551009175-61a1642cc2bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGRldHJvaXR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
         }
     }
 
@@ -87,15 +87,15 @@
         -webkit-box-decoration-break: clone;
 
         &-1 {
-            background-image: linear-gradient(to right bottom, rgba($color-yellow, .85), rgba($color-orange, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-primary, .65), rgba($color-secondary, .65));
         }
 
         &-2 {
-            background-image: linear-gradient(to right bottom, rgba($color-blue, .85), rgba($color-violet, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-secondary, .65), rgba($color-primary, .65));
         }
 
         &-3 {
-            background-image: linear-gradient(to right bottom, rgba($color-white, .85), rgba($color-black, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-primary, .65), rgba($color-secondary, .65));
         }
     }
 
@@ -113,7 +113,7 @@
                 padding: 1rem;
 
                 &:not(:last-child) {
-                    border-bottom: 1px solid $color-orange;
+                    border-bottom: 1px solid $color-secondary;
                 }
             }
         }

@@ -23,12 +23,16 @@ body {
         font-size: 6rem;
         font-weight: 700;
         text-shadow: 5px 5px 5px gray;
-        letter-spacing: 3.5rem;
+        letter-spacing: 2.5rem;
         animation-name: moveRight;
         animation-duration: 2s;
         /* animation-delay: 2s; */
         /* animation-iteration-count: 3; */
         animation-timing-function: ease-out;
+
+        @include responsive(tablet-landscape) {
+            letter-spacing: 1rem;
+        }
 
         @include responsive(tablet-portrait) {
             letter-spacing: 2.5rem;

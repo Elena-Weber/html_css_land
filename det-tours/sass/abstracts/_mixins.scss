@@ -22,7 +22,7 @@
 
 @mixin responsive($breakpoint) {
     @if $breakpoint == mobile-phone {
-        @media only screen and (max-width: 37.5em) { // not for printing out
+        @media only screen and (max-width: 37.5em) { // for touchscreens
             @content
         }
     };
