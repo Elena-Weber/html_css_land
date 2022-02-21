@@ -41,8 +41,8 @@ body {
         }
 
         @include responsive(mobile-phone) {
-            letter-spacing: 1rem;
-            font-size: 5rem;
+            // letter-spacing: 1rem;
+            font-size: 3.5rem;
         }
     }
     

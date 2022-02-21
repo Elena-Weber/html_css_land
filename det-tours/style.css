@@ -93,8 +93,7 @@ body {
         letter-spacing: 1rem; } }
     @media only screen and (max-width: 37.5em) {
       .main__primary-title {
-        letter-spacing: 1rem;
-        font-size: 5rem; } }
+        font-size: 3.5rem; } }
   .main__secondary-title {
     display: block;
     font-size: 3rem;
@@ -233,6 +232,9 @@ body {
   animation: moveUp 1s ease-out .75s;
   animation-fill-mode: backwards;
   /* applies zero animation at start, useful with animation delay */ }
+  @media only screen and (max-width: 37.5em) {
+    .main-btn {
+      font-size: 15px !important; } }
   .main-btn::after {
     background-color: white; }
 
@@ -397,6 +399,9 @@ body {
         position: relative;
         width: 33.33333%;
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+    @media only screen and (max-width: 37.5em) {
+      .composition__photo {
+        width: 23.33333%; } }
     .composition__photo--p1 {
       left: 0;
       top: -1.5rem; }
@@ -404,6 +409,9 @@ body {
         .composition__photo--p1 {
           top: 1rem;
           transform: scale(1.2); } }
+      @media only screen and (max-width: 37.5em) {
+        .composition__photo--p1 {
+          left: 7rem; } }
     .composition__photo--p2 {
       right: 17rem;
       top: 10rem; }
@@ -413,6 +421,9 @@ body {
           right: 0;
           transform: scale(1.3);
           z-index: 100; } }
+      @media only screen and (max-width: 37.5em) {
+        .composition__photo--p2 {
+          left: 9rem; } }
     .composition__photo--p3 {
       left: 55%;
       top: 1rem; }
@@ -420,7 +431,10 @@ body {
         .composition__photo--p3 {
           top: 1rem;
           left: 0;
-          transform: scale(1.2); } }
+          transform: scale(1.3); } }
+      @media only screen and (max-width: 37.5em) {
+        .composition__photo--p3 {
+          left: 10rem; } }
     .composition__photo:hover {
       outline: 0.5rem solid #008080;
       transform: scale(1.05) translateY(-0.5px);
@@ -736,7 +750,7 @@ body {
         margin-bottom: 6rem; } }
   @media only screen and (max-width: 56.25em) {
     .row {
-      max-width: 50rem;
+      max-width: 70rem;
       padding: 0 3rem; } }
   .row::after {
     content: "";
