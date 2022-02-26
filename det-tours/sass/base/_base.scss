@@ -18,10 +18,6 @@ html {
         font-size: 50%; // 1rem = 8px (8/16=0.5)
     }
 
-    // @include responsive(mobile-phone) { // add mixin
-    //     font-size: 50%;
-    // }
-
     @include responsive(big-screen) { // add mixin
         font-size: 75%; // 1rem = 12px (12/16=0.75)
     }

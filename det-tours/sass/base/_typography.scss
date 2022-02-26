@@ -8,7 +8,6 @@ body {
 .main {
     position: absolute;
     top: 45%;
-    // top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); /* move text block with its center fixed */
     text-align: center;
@@ -26,8 +25,6 @@ body {
         letter-spacing: 2.5rem;
         animation-name: moveRight;
         animation-duration: 2s;
-        /* animation-delay: 2s; */
-        /* animation-iteration-count: 3; */
         animation-timing-function: ease-out;
 
         @include responsive(tablet-landscape) {
@@ -58,7 +55,6 @@ body {
         letter-spacing: 2.2rem;
         animation: moveLeft 2s;
         margin-bottom: 35rem;
-        // margin-bottom: 6rem;
 
         @include responsive(tablet-landscape) {
             letter-spacing: 1.5rem;

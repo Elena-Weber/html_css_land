@@ -49,10 +49,6 @@
     padding: 15rem 1rem;
     background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
 
-    // @include responsive(tablet-landscape) {
-    //     padding: 5rem 0;
-    // }
-
     @include responsive(tablet-portrait) {
         padding: 10rem 0;
     }

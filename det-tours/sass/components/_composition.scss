@@ -11,31 +11,21 @@
 
         @include responsive(tablet-landscape) {
             width: 40%;
-            // float: left;
-            // position: relative;
-            // width: 33.33333%;
-            // box-shadow: 0 1.5rem 3rem rgba($color: #000000, $alpha: .2);
         }
 
         @include responsive(tablet-portrait) {
             float: left;
             position: relative;
-            width: 33.33333%;
+            width: 33%;
             box-shadow: 0 1.5rem 3rem rgba($color: #000000, $alpha: .2);
         }
 
         @include responsive(mobile-phone) {
-            // float: inherit;
-            // position: relative;
-            width: 23.33333%;
-            // box-shadow: 0 1.5rem 3rem rgba($color: #000000, $alpha: .2);
+            width: 23%;
         }
 
         @include responsive(mini-mobile) {
-            // float: inherit;
-            // position: relative;
             width: 25%;
-            // box-shadow: 0 1.5rem 3rem rgba($color: #000000, $alpha: .2);
         }
 
         &--p1 {
@@ -48,15 +38,11 @@
             }
 
             @include responsive(mobile-phone) {
-                // top: 1rem;
                 left: 7rem;
-                // transform: scale(1.2);
             }
 
             @include responsive(mini-mobile) {
-                // top: 1rem;
                 left: 2rem;
-                // transform: scale(1.2);
             }
         }
 
@@ -72,15 +58,11 @@
             }
 
             @include responsive(mobile-phone) {
-                // top: 1rem;
                 left: 9rem;
-                // transform: scale(1.3);
             }
 
             @include responsive(mini-mobile) {
-                // top: 1rem;
                 left: 5rem;
-                // transform: scale(1.3);
             }
         }
 
@@ -95,14 +77,10 @@
             }
 
             @include responsive(mobile-phone) {
-                // top: 1rem;
                 left: 10rem;
-                // transform: scale(1.3);
             }
             @include responsive(mini-mobile) {
-                // top: 1rem;
                 left: 8.5rem;
-                // transform: scale(1.3);
             }
         }
 

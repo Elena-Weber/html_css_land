@@ -23,33 +23,9 @@
         url("https://images.unsplash.com/photo-1598038748999-1174fb7d2562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     }
 
-    // @include responsive(tablet-portrait) {
-    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    //     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    // }
-
     @include responsive(mobile-phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
-
-    // &__logo {
-    //     position: absolute;
-    //     top: 4rem;
-    //     left: 4rem;
-    // }
-
-    // &__logo-pic {
-    //     font-size: 6rem;
-    //     margin-bottom: .5rem;
-    //     display: inline-block;
-    //     background-image: linear-gradient(to right, $color-primary, $color-secondary);
-    //     background-clip: text; // clips gradient to text's shape
-    //     -webkit-background-clip: text;
-    //     color: transparent; // so you can see gradient, not text color
-    // }
-
-    // &__logo-pic:hover {
-    //     animation: turning 1s ease-in-out;
-    // }
+    
 }

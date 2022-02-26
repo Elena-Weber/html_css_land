@@ -26,9 +26,6 @@
         -webkit-shape-outside: circle(50%);
         shape-outside: circle(50%); // makes text flow around circle
         -webkit-clip-path: circle(50%);
-        // -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-        // -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
         clip-path: circle(50%); // makes circle out of square
         transform: translateX(-3rem) skewX(12deg); // moves circle to the left of text and straightens up photo
         position: relative;

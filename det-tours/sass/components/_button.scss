@@ -11,10 +11,6 @@
         border: none;
         cursor: pointer;
     }
-    
-    @include responsive(mobile-phone) { // ???
-        // padding: 5.5rem 1rem;
-    }
 
     &:hover {
         transform: translateY(-3px);
