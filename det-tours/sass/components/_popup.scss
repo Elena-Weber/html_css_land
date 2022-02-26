@@ -35,17 +35,26 @@
         width: 33.3333333333%;
         display: table-cell;
         vertical-align: middle;
+
+        @include responsive(tablet-portrait) {
+            display: none;
+        }
     }
 
     &-right {
         width: 66.666%;
         display: table-cell;
         padding: 3rem 5rem;
+
     }
 
     &-img {
         display: block;
         width: 100%;
+
+        @include responsive(tablet-portrait) {
+            display: none;
+        }
     }
 
     &-p {
@@ -94,4 +103,5 @@
             color: $color-black;
         }
     }
+
 }

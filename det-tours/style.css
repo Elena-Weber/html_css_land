@@ -586,6 +586,9 @@ body {
     width: 33.3333333333%;
     display: table-cell;
     vertical-align: middle; }
+    @media only screen and (max-width: 56.25em) {
+      .popup-left {
+        display: none; } }
   .popup-right {
     width: 66.666%;
     display: table-cell;
@@ -593,6 +596,9 @@ body {
   .popup-img {
     display: block;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .popup-img {
+        display: none; } }
   .popup-p {
     font-size: 1.4rem;
     margin-bottom: 4rem;
