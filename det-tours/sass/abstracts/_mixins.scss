@@ -14,6 +14,7 @@
 }
 
 // Breakpoints for responsive design:
+// 0 - 465px <- mini mobile
 // 0 - 600px <- mobile phone
 // 600px - 900px <- tablet portrait
 // 900px - 1200px <- tablet landscape
@@ -21,6 +22,11 @@
 // 1800px + <- big desktop
 
 @mixin responsive($breakpoint) {
+    @if $breakpoint == mini-mobile {
+        @media only screen and (max-width: 29em) { // for touchscreens and smaller screens (iPhone)
+            @content
+        }
+    };
     @if $breakpoint == mobile-phone {
         @media only screen and (max-width: 37.5em) { // for touchscreens
             @content
