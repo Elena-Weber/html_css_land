@@ -175,3 +175,119 @@
     padding: 2.5rem;
     color: var(--color-gray-light4);
 }
+
+.gallery {
+    display: flex;
+
+    &__item {
+
+    }
+
+    &__pic {
+        width: 100%;
+        // display: block;
+    }
+}
+
+.overview {
+    display: flex;
+    border-bottom: 1px solid var(--color-gray-light2);
+    align-items: center;
+
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+    }
+
+    &__rating {
+        // flex: 1; // expands to occupy 100%
+        // background-color: lightblue;
+        margin-right: auto; // occupies place to the right
+        display: flex;
+
+        &-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            fill: var(--color-primary-dark);
+        }
+    }
+
+    &__location {
+        // flex: 1; // expands to occupy 100%
+        // background-color: lightseagreen;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            fill: var(--color-primary-dark);
+            margin-right: .5rem;
+        }
+    }
+
+    &__average-rating {
+        background-color: var(--color-primary);
+        margin-left: 3rem;
+        color: #fff;
+        align-self: stretch; // stretches to occupy all available space
+        padding: 0 2.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &-number {
+            font-size: 2.25rem;
+            font-weight: 300;
+            margin-bottom: -.5rem;
+        }
+
+        &-count {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.btn-inline {
+    border: none;
+    color: var(--color-primary-dark);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        color: var(--color-gray-dark1);
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulse-btn 1s infinite;
+    }
+}
+
+@keyframes pulse-btn {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

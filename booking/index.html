@@ -84,13 +84,58 @@
                         </a>
                     </li>
                 </ul>
+
                 <div class="legal">
                     &copy; 2022 by Elena Weber Designs. All rights reserved.
                 </div>
             </nav>
 
             <main class="hotel-view">
-                Hotel view
+                <div class="gallery">
+                    <!-- figure allows to add caption -->
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Hotel photo" class="gallery__pic">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGhvdGVsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Hotel photo" class="gallery__pic">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhvdGVsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Hotel photo" class="gallery__pic">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">Hotel name</h1>
+                    <div class="overview__rating">
+                        <svg class="overview__rating-icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__rating-icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__rating-icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__rating-icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__rating-icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                    </div>
+
+                    <div class="overview__location">
+                        <svg class="overview__location-icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">Hotel location</button>
+                    </div>
+
+                    <div class="overview__average-rating">
+                        <div class="overview__average-rating-number">8.6</div>
+                        <div class="overview__average-rating-count">123 votes</div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
