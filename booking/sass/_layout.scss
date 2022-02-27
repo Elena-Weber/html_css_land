@@ -1,0 +1,27 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto; // centering container
+    background-color: var(--color-gray-light1);
+    // box-shadow: var(--shadow); // this one doesn't work
+    box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: .3);
+}
+
+.header {
+    height: 7rem;
+    background-color: white;
+    border-bottom: var(--color-gray-light2);
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-gray-dark1);
+    flex: 0 0 18%; // doesn't expand, doesn't shrink, always occupies 18% of content container width
+}
+
+.hotel-view {
+    background-color: red;
+    flex: 1; // so it occupies the rest of content container width
+}
