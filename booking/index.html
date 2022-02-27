@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
+
         <header class="header">
             <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhdmVsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="logo" class="logo">
             <form action="#" class="search">
                 <input type="text" class="search__input" placeholder="Search">
                 <button class="search__button">
+                    <!-- using svg icons like this -->
                     <svg class="search__icon">
                         <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
                     </svg>
@@ -21,12 +24,14 @@
             </form>
             <nav class="user-nav">
                 <div class="user-nav__icon-box">
+                    <!-- using svg icons like this -->
                     <svg class="user-nav__icon">
                         <use xlink:href="img/symbol-defs.svg#icon-bookmark"></use>
                     </svg>
                     <span class="user-nav__notification">5</span>
                 </div>
                 <div class="user-nav__icon-box">
+                    <!-- using svg icons like this -->
                     <svg class="user-nav__icon">
                         <use xlink:href="img/symbol-defs.svg#icon-chat"></use>
                     </svg>
@@ -38,10 +43,52 @@
                 </div>
             </nav>
         </header>
+
         <div class="content">
             <nav class="sidebar">
-                Navi
+                <ul class="sidebar-nav">
+                    <li class="sidebar-nav__item sidebar-nav__item--active">
+                        <a href="#" class="sidebar-nav__link">
+                            <!-- using svg icons like this -->
+                            <svg class="sidebar-nav__icon">
+                                <use xlink:href="img/symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav__item">
+                        <a href="#" class="sidebar-nav__link">
+                            <!-- using svg icons like this -->
+                            <svg class="sidebar-nav__icon">
+                                <use xlink:href="img/symbol-defs.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav__item">
+                        <a href="#" class="sidebar-nav__link">
+                            <!-- using svg icons like this -->
+                            <svg class="sidebar-nav__icon">
+                                <use xlink:href="img/symbol-defs.svg#icon-key"></use>
+                            </svg>
+                            <span>Car rent</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav__item">
+                        <a href="#" class="sidebar-nav__link">
+                            <!-- using svg icons like this -->
+                            <svg class="sidebar-nav__icon">
+                                <use xlink:href="img/symbol-defs.svg#icon-map"></use>
+                            </svg>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2022 by Elena Weber Designs. All rights reserved.
+                </div>
             </nav>
+
             <main class="hotel-view">
                 Hotel view
             </main>

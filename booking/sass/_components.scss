@@ -52,7 +52,7 @@
     &__icon {
         height: 2rem;
         width: 2rem;
-        fill: var(--color-gray-dark3);
+        fill: var(--color-gray-dark3); // change color of icon
     }
 }
 
@@ -111,4 +111,67 @@
         // }
     }
 
+}
+
+.sidebar-nav {
+    font-size: 1.4rem;
+    list-style: none;
+    margin-top: 3.5rem;
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: .5rem; // create distance between items except last item
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--color-primary);
+            transform: scaleY(0); // do not show effect before hover
+            transition: transform .2s, width .4s cubic-bezier(1,0,0,1) .2s background-color .1s; // duration of effects
+            // transform-origin: bottom; // effect starts from bottom (default is center)
+        }
+
+        &:hover::before, &--active::before { // chooses first item as active and always with full effect
+            transform: scaleY(1); // show effect on hover
+            width: 100%;
+        }
+
+        &:active::before {
+            background-color: var(--color-primary-light); // color temporarily changes on click
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: var(--color-gray-light1);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block; // creates space between links together with following property
+        padding: 1.5rem 3rem;
+        display: flex;
+        align-items: center;
+        position: relative; // so you can see text after effect is applied (otherwise it covers link's text)
+        // z-index: 10;
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: currentColor; // change color of icon, inherits color of parent (__link)
+        margin-right: 2rem;
+    }
+}
+
+.legal {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2.5rem;
+    color: var(--color-gray-light4);
 }
