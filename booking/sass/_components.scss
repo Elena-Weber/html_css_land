@@ -271,7 +271,7 @@
 
     &:focus {
         outline: none;
-        animation: pulse-btn 1s infinite;
+        animation: pulse-btn 1s infinite; // doesn't work !!!
     }
 }
 
@@ -289,5 +289,66 @@
     100% {
         transform: scale(1);
         box-shadow: none;
+    }
+}
+
+.par:not(:last-of-type) { // not to last sibling (= paragraph)
+    margin-bottom: 2rem;
+}
+
+.services {
+    margin: 3rem 0;
+    list-style: none;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--color-gray-light2);
+    border-top: 1px solid var(--color-gray-light2);
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%; // doesn't expand, doesn't shrink, occupies 50% of parent's width
+        margin-bottom: .7rem;
+
+        &::before {
+            content: ""; // obligatory when using "before"
+            display: inline-block;
+            height: 1rem;
+            width: 1rem;
+            margin-right: 7px;
+            background-color: var(--color-primary);
+            -webkit-mask-image: url(./img/SVG/chevron-thin-right.svg); // cuts out image from bg-color
+            mask-image: url(./img/SVG/chevron-thin-right.svg);
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            // background-image: url(./img/SVG/chevron-thin-right.svg);
+            // background-size: cover;
+        }
+    }
+}
+
+.recommend {
+    font-size: 1.5rem;
+    color: var(--color-gray-light3);
+    display: flex;
+    align-items: center;
+
+    &__count {
+        margin-right: auto; // moves block to the left to give space to another block in this row
+    }
+
+    &__friends {
+
+    }
+
+    &__photo {
+        box-sizing: content-box; // don't include border thickness to image size
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        border: 3px solid white;
+
+        &:not(:last-child) {
+            margin-right: -2rem; // images on top of each other
+        }
     }
 }
