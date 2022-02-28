@@ -280,24 +280,6 @@
 
     &:focus {
         outline: none;
-        animation: pulse-btn 1s infinite; // doesn't work !!!
-    }
-}
-
-@keyframes pulse-btn {
-    0% {
-        transform: scale(1);
-        box-shadow: none;
-    }
-
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: .25);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: none;
     }
 }
 
@@ -419,5 +401,63 @@
         font-family: sans-serif;
         line-height: 1;
         z-index: 1;
+    }
+}
+
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__text {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    color: white;
+    position: relative;
+    overflow: hidden; // hides invisible btn text
+    cursor: pointer;
+
+    & > * { // for all children of this element
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        transition: all .2s;
+    }
+    &-visible {
+        padding: 2rem 7.5rem;
+    }
+
+    &-invisible {
+        position: absolute;
+        left: 0;
+        top: -100%; // hide it above button
+        padding: 2rem 0;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+    }
+
+    &:hover &-visible {
+        transform: translateY(100%); // move down 100%
+    }
+
+    &:hover &-invisible {
+        top: 0;
+    }
+
+    &:focus {
+        outline: none;
     }
 }
