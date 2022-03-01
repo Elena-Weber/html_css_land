@@ -118,11 +118,24 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $breakpoint-large) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem; // create distance between items except last item
+
+            @media only screen and (max-width: $breakpoint-large) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media only screen and (max-width: $breakpoint-large) {
+            flex: 1;
         }
 
         &::before {
@@ -159,6 +172,11 @@
         align-items: center;
         position: relative; // so you can see text after effect is applied (otherwise it covers link's text)
         // z-index: 10;
+
+        @media only screen and (max-width: $breakpoint-large) {
+            justify-content: center;
+            padding: 2rem;
+        }
     }
 
     &__icon {
@@ -174,6 +192,10 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--color-gray-light4);
+
+    @media only screen and (max-width: $breakpoint-large) {
+        display: none;
+    }
 }
 
 .gallery {
