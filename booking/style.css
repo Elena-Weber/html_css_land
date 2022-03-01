@@ -251,7 +251,8 @@ body {
 .recommend {
   color: var(--color-gray-dark2);
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.3rem; }
   .recommend__count {
     margin-right: auto; }
   .recommend__photo {
@@ -259,7 +260,7 @@ body {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    border: 3px solid white; }
+    border: 2px solid white; }
     .recommend__photo:not(:last-child) {
       margin-right: -2rem; }
 
@@ -353,6 +354,9 @@ body {
   margin: 8rem auto;
   background-color: var(--color-gray-light1);
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0; } }
 
 .header {
   height: 7rem;

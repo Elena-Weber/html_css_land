@@ -4,6 +4,10 @@
     background-color: var(--color-gray-light1);
     // box-shadow: var(--shadow); // this one doesn't work
     box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: .3);
+
+    @media only screen and (max-width: $breakpoint-largest) {
+        margin: 0; // get rid of bg
+    }
 }
 
 .header {

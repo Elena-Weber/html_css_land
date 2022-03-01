@@ -14,6 +14,9 @@
     --shadow: 0 2rem 6rem rgba($color: #000000, $alpha: .3); // it doesn't work
 }
 
+$breakpoint-largest: 75em; // 1200px
+$breakpoint-large: 62.5em; // 1000px
+
 * {
     margin: 0;
     padding: 0;

@@ -321,6 +321,7 @@
     color: var(--color-gray-dark2);
     display: flex;
     align-items: center;
+    font-size: 1.3rem;
 
     &__count {
         margin-right: auto; // moves block to the left to give space to another block in this row
@@ -335,7 +336,7 @@
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
-        border: 3px solid white;
+        border: 2px solid white;
 
         &:not(:last-child) {
             margin-right: -2rem; // images on top of each other
