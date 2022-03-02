@@ -9,6 +9,11 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $breakpoint-small) {
+        order: 1; // default order is 0, by setting it to 1 this element moves to end of row of elements
+        flex: 0 0 100%;
+    }
+
     &__input {
         font-family: inherit; // input does not inherit these automatically
         font-size: inherit;
@@ -20,10 +25,18 @@
         transition: all .2s;
         margin-right: -3.25rem; // icon moves on top of input
 
+        @media only screen and (max-width: $breakpoint-small) {
+            margin-left: -1.5rem;
+        }
+
         &:focus { // on click
             outline: none;
             width: 100%;
             background-color: var(--color-gray-light3);
+
+            @media only screen and (max-width: $breakpoint-small) {
+                width: 95%;
+            }
         }
 
         &::-webkit-input-placeholder {
@@ -177,6 +190,11 @@
             justify-content: center;
             padding: 2rem;
         }
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            padding: 1.5rem 1rem;
+            font-size: 1.2rem;
+        }
     }
 
     &__icon {
@@ -184,6 +202,10 @@
         height: 1.75rem;
         fill: currentColor; // change color of icon, inherits color of parent (__link)
         margin-right: 2rem;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            margin-right: 1rem;
+        }
     }
 }
 
@@ -222,6 +244,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
     }
 
     &__rating {
@@ -263,15 +290,27 @@
         justify-content: center;
         flex-direction: column;
 
+        @media only screen and (max-width: $breakpoint-medium) {
+            padding: 0 1.5rem;
+        }
+
         &-number {
             font-size: 2.25rem;
             font-weight: 300;
-            margin-bottom: -.5rem;
+            margin-bottom: -.6rem;
+
+            @media only screen and (max-width: $breakpoint-medium) {
+                font-size: 1.8rem;
+            }
         }
 
         &-count {
             font-size: 1rem;
             text-transform: uppercase;
+
+            @media only screen and (max-width: $breakpoint-medium) {
+                font-size: .7rem;
+            }
         }
     }
 }
@@ -328,13 +367,20 @@
             height: 1rem;
             width: 1rem;
             margin-right: 7px;
-            background-color: var(--color-primary);
-            -webkit-mask-image: url(./img/SVG/chevron-thin-right.svg); // cuts out image from bg-color
-            mask-image: url(./img/SVG/chevron-thin-right.svg);
-            -webkit-mask-size: cover;
-            mask-size: cover;
-            // background-image: url(./img/SVG/chevron-thin-right.svg);
-            // background-size: cover;
+
+            // option for older browsers (doesn't support color change for icons, they'll be black)
+            background-image: url(./img/SVG/chevron-thin-right.svg);
+            background-size: cover;
+
+            // for newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: var(--color-primary);
+                -webkit-mask-image: url(./img/SVG/chevron-thin-right.svg); // cuts out image from bg-color
+                mask-image: url(./img/SVG/chevron-thin-right.svg);
+                -webkit-mask-size: cover;
+                mask-size: cover;
+                background-image: none; // overwrites black color for icons from previous step for older browsers
+            }
         }
     }
 }
@@ -350,7 +396,7 @@
     }
 
     &__friends {
-
+        display: flex;
     }
 
     &__photo {
@@ -373,6 +419,11 @@
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
+
+    @media only screen and (max-width: $breakpoint-large) {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
 
     &__text {
         margin-bottom: 2rem;
@@ -430,6 +481,10 @@
 .cta {
     padding: 3.5rem 0;
     text-align: center;
+
+    @media only screen and (max-width: $breakpoint-large) {
+        padding: 2.5rem 0;
+    }
 
     &__text {
         text-transform: uppercase;

@@ -16,6 +16,8 @@
 
 $breakpoint-largest: 75em; // 1200px
 $breakpoint-large: 62.5em; // 1000px
+$breakpoint-medium: 37.5em; // 600px
+$breakpoint-small: 31.25em; // 500px
 
 * {
     margin: 0;
@@ -35,7 +37,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--color-gray-dark2); // use css vars like this, through "var()"
+    color: var(--color-black); // use css vars like this, through "var()"
     background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
     background-size: cover;
     background-repeat: no-repeat;
