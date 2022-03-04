@@ -34,6 +34,28 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+.title {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--color-gray-light1); }
+  @media only screen and (max-width: 62.5em) {
+    .title {
+      padding: 1.5rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .title {
+      padding: 1rem 0; } }
+  .title-name {
+    font-size: 3rem;
+    color: var(--color-primary-dark);
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 62.5em) {
+      .title-name {
+        font-size: 2.3rem;
+        letter-spacing: .5px; } }
+  @media only screen and (max-width: 37.5em) {
+    .title-par {
+      display: none; } }
+
 .logo-div {
   position: relative; }
 
@@ -258,7 +280,7 @@ body {
       text-transform: uppercase; }
       @media only screen and (max-width: 37.5em) {
         .overview__average-rating-count {
-          font-size: .7rem; } }
+          font-size: .9rem; } }
 
 .btn-inline {
   border: none;
@@ -280,17 +302,6 @@ body {
   .btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none; }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
-  100% {
-    transform: scale(1);
-    box-shadow: none; } }
 
 .par:not(:last-of-type) {
   margin-bottom: 2rem; }
@@ -339,7 +350,7 @@ body {
     border-radius: 50%;
     border: 2px solid white; }
     .recommend__photo:not(:last-child) {
-      margin-right: -2rem; }
+      margin-right: -1rem; }
 
 .review {
   background-color: white;
@@ -399,7 +410,8 @@ body {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2.5rem;
+    letter-spacing: 3px; }
 
 .btn {
   font-size: 1.6rem;
@@ -434,6 +446,17 @@ body {
     outline: none;
     animation: pulsate 1s infinite; }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -454,7 +477,7 @@ body {
   @media only screen and (max-width: 31.25em) {
     .header {
       flex-wrap: wrap;
-      height: 11rem;
+      height: 12rem;
       align-content: space-around; } }
 
 .content {

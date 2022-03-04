@@ -1,3 +1,34 @@
+.title {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--color-gray-light1);
+
+    @media only screen and (max-width: $breakpoint-large) {
+        padding: 1.5rem 0;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+        padding: 1rem 0;
+    }
+
+    &-name {
+        font-size: 3rem;
+        color: var(--color-primary-dark);
+        letter-spacing: 1px;
+
+        @media only screen and (max-width: $breakpoint-large) {
+            font-size: 2.3rem;
+            letter-spacing: .5px;
+        }
+    }
+
+    &-par {
+        @media only screen and (max-width: $breakpoint-medium) {
+            display: none;
+        }
+    }
+}
+
 .logo-div {
     position: relative;
 }
@@ -36,6 +67,7 @@
 
         @media only screen and (max-width: $breakpoint-small) {
             margin-left: -1.5rem;
+            // padding: 0 2rem 0.7rem 2rem;
         }
 
         &:focus { // on click
@@ -321,7 +353,7 @@
             text-transform: uppercase;
 
             @media only screen and (max-width: $breakpoint-medium) {
-                font-size: .7rem;
+                font-size: .9rem;
             }
         }
     }
@@ -354,23 +386,6 @@
     &:focus {
         outline: none;
         animation: pulsate 1s infinite; // works on click
-    }
-}
-
-@keyframes pulsate {
-    0% {
-        transform: scale(1);
-        box-shadow: none;
-    }
-
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: none;
     }
 }
 
@@ -437,7 +452,7 @@
         border: 2px solid white;
 
         &:not(:last-child) {
-            margin-right: -2rem; // images on top of each other
+            margin-right: -1rem; // images on top of each other
         }
     }
 }
@@ -521,6 +536,7 @@
         font-size: 2rem;
         font-weight: 400;
         margin-bottom: 2.5rem;
+        letter-spacing: 3px;
     }
 }
 
@@ -568,5 +584,22 @@
     &:focus {
         outline: none;
         animation: pulsate 1s infinite;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
     }
 }
