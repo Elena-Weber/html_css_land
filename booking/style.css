@@ -1,8 +1,9 @@
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba2650;
-  --color-black: rgba(0, 0, 0, 0.2);
+  --color-primary: #2a6f97;
+  --color-primary-light: #89c2d9;
+  --color-primary-dark: #014f86;
+  --color-black: black;
+  --color-red: #e5383b;
   --color-gray-light1: #faf9f9;
   --color-gray-light2: #f4f2f2;
   --color-gray-light3: #f0eeee;
@@ -24,7 +25,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Mukta', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-black);
@@ -102,11 +103,11 @@ body {
     .user-nav__icon-box {
       position: relative; }
   .user-nav__notification {
-    font-size: .8rem;
+    font-size: 1rem;
     height: 1.75rem;
     width: 1.75rem;
     border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color: var(--color-red);
     color: #fff;
     position: absolute;
     top: 1.5rem;
@@ -198,7 +199,7 @@ body {
   align-items: center; }
   .overview__heading {
     font-size: 2.25rem;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
@@ -212,15 +213,15 @@ body {
     .overview__rating-icon {
       width: 1.75rem;
       height: 1.75rem;
-      fill: var(--color-primary-dark); }
+      fill: var(--color-red); }
   .overview__location {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: flex;
     align-items: center; }
     .overview__location-icon {
       width: 1.75rem;
       height: 1.75rem;
-      fill: var(--color-primary-dark);
+      fill: var(--color-red);
       margin-right: .5rem; }
   .overview__average-rating {
     background-color: var(--color-primary);
@@ -243,7 +244,7 @@ body {
         .overview__average-rating-number {
           font-size: 1.8rem; } }
     .overview__average-rating-count {
-      font-size: 1rem;
+      font-size: 1.1rem;
       text-transform: uppercase; }
       @media only screen and (max-width: 37.5em) {
         .overview__average-rating-count {
@@ -344,12 +345,12 @@ body {
     .review__user-info {
       margin-right: auto; }
     .review__user-name {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 1.3rem;
+      font-weight: 500;
       text-transform: uppercase;
       margin-bottom: .4rem; }
     .review__user-date {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: var(--color-gray-dark3); }
   .review__rating {
     color: var(--color-primary);
@@ -375,12 +376,12 @@ body {
   .cta__text {
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2.5rem; }
 
 .btn {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1.6rem;
+  font-weight: 400;
   text-transform: uppercase;
   border-radius: 100px;
   border: none;
@@ -426,7 +427,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem; }
+  font-size: 1.8rem; }
   @media only screen and (max-width: 31.25em) {
     .header {
       flex-wrap: wrap;
@@ -455,7 +456,7 @@ body {
   padding: 4.5rem;
   background-color: var(--color-gray-light3);
   border-bottom: 1px solid var(--color-gray-light2);
-  font-size: 1.4rem; }
+  font-size: 1.6rem; }
   @media only screen and (max-width: 62.5em) {
     .details {
       padding: 3rem; } }

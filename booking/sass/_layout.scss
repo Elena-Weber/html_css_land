@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 
     @media only screen and (max-width: $breakpoint-small) {
         flex-wrap: wrap;
@@ -52,7 +52,7 @@
     padding: 4.5rem;
     background-color: var(--color-gray-light3);
     border-bottom: 1px solid var(--color-gray-light2);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
     @media only screen and (max-width: $breakpoint-large) { // from bigger to smaller screens
         padding: 3rem;

@@ -1,8 +1,9 @@
 :root { // setting css variables to use everywhere
-    --color-primary: #eb2f64;
-    --color-primary-light: #ff3366;
-    --color-primary-dark: #ba2650;
-    --color-black: rgba(0, 0, 0, 0.2);
+    --color-primary: #2a6f97;
+    --color-primary-light: #89c2d9;
+    --color-primary-dark: #014f86;
+    --color-black: black;
+    --color-red: #e5383b;
     --color-gray-light1: #faf9f9;
     --color-gray-light2: #f4f2f2;
     --color-gray-light3: #f0eeee;
@@ -34,7 +35,7 @@ html {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Mukta', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-black); // use css vars like this, through "var()"

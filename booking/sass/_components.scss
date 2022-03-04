@@ -97,11 +97,11 @@
     }
 
     &__notification {
-        font-size: .8rem;
+        font-size: 1rem;
         height: 1.75rem;
         width: 1.75rem;
         border-radius: 50%;
-        background-color: var(--color-primary);
+        background-color: var(--color-red);
         color: #fff;
         position: absolute; // for children elements
         top: 1.5rem;
@@ -240,7 +240,7 @@
 
     &__heading {
         font-size: 2.25rem;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
@@ -260,21 +260,22 @@
         &-icon {
             width: 1.75rem;
             height: 1.75rem;
-            fill: var(--color-primary-dark);
+            fill: var(--color-red);
         }
     }
 
     &__location {
         // flex: 1; // expands to occupy 100%
         // background-color: lightseagreen;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         display: flex;
         align-items: center;
+        // color: var(--color-red);
 
         &-icon {
             width: 1.75rem;
             height: 1.75rem;
-            fill: var(--color-primary-dark);
+            fill: var(--color-red);
             margin-right: .5rem;
         }
     }
@@ -305,7 +306,7 @@
         }
 
         &-count {
-            font-size: 1rem;
+            font-size: 1.1rem;
             text-transform: uppercase;
 
             @media only screen and (max-width: $breakpoint-medium) {
@@ -447,14 +448,14 @@
         }
 
         &-name {
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1.3rem;
+            font-weight: 500;
             text-transform: uppercase;
             margin-bottom: .4rem;
         }
 
         &-date {
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: var(--color-gray-dark3);
         }
     }
@@ -489,14 +490,14 @@
     &__text {
         text-transform: uppercase;
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: 400;
         margin-bottom: 2.5rem;
     }
 }
 
 .btn {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
     text-transform: uppercase;
     border-radius: 100px;
     border: none;
