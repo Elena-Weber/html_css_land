@@ -15,7 +15,12 @@
     <div class="container">
 
         <header class="header">
-            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhdmVsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="logo" class="logo">
+            <div class="logo-div">
+                <!-- using svg icons like this -->
+                <svg class="logo">
+                    <use xlink:href="img/symbol-defs.svg#icon-compass2"></use>
+                </svg>
+            </div>
             <form action="#" class="search">
                 <input type="text" class="search__input" placeholder="Search">
                 <button class="search__button">
@@ -38,7 +43,7 @@
                     <svg class="user-nav__icon">
                         <use xlink:href="img/symbol-defs.svg#icon-chat"></use>
                     </svg>
-                    <span class="user-nav__notification">10</span>
+                    <span class="user-nav__notification">3</span>
                 </div>
                 <div class="user-nav__user">
                     <img src="https://images.unsplash.com/photo-1597248374161-426f0d6d2fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvcnRyYWl0JTIwYmxvbmRlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="user photo" class="user-nav__user-photo">
@@ -50,7 +55,7 @@
         <div class="content">
             <nav class="sidebar">
                 <ul class="sidebar-nav">
-                    <li class="sidebar-nav__item sidebar-nav__item--active">
+                    <li class="sidebar-nav__item  sidebar-nav__item--active">
                         <a href="#" class="sidebar-nav__link">
                             <!-- using svg icons like this -->
                             <svg class="sidebar-nav__icon">
@@ -63,7 +68,7 @@
                         <a href="#" class="sidebar-nav__link">
                             <!-- using svg icons like this -->
                             <svg class="sidebar-nav__icon">
-                                <use xlink:href="img/symbol-defs.svg#icon-aircraft-take-off"></use>
+                                <use xlink:href="img/symbol-defs.svg#icon-airplane"></use>
                             </svg>
                             <span>Flight</span>
                         </a>
@@ -81,9 +86,9 @@
                         <a href="#" class="sidebar-nav__link">
                             <!-- using svg icons like this -->
                             <svg class="sidebar-nav__icon">
-                                <use xlink:href="img/symbol-defs.svg#icon-map"></use>
+                                <use xlink:href="img/symbol-defs.svg#icon-files-empty"></use>
                             </svg>
-                            <span>Tours</span>
+                            <span>Notes</span>
                         </a>
                     </li>
                 </ul>
@@ -120,10 +125,10 @@
                             <use xlink:href="img/symbol-defs.svg#icon-star"></use>
                         </svg>
                         <svg class="overview__rating-icon">
-                            <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                            <use xlink:href="img/symbol-defs.svg#icon-star-half"></use>
                         </svg>
                         <svg class="overview__rating-icon">
-                            <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                            <use xlink:href="img/symbol-defs.svg#icon-star-empty"></use>
                         </svg>
                     </div>
 

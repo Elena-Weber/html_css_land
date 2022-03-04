@@ -34,9 +34,17 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+.logo-div {
+  position: relative; }
+
 .logo {
-  height: 3.25rem;
-  margin-left: 2rem; }
+  height: 4.5rem;
+  margin-left: 2rem;
+  fill: var(--color-primary);
+  display: block;
+  position: absolute;
+  left: -13.5rem;
+  top: -2.2rem; }
 
 .search {
   flex: 0 0 40%;
@@ -304,13 +312,13 @@ body {
       height: 1rem;
       width: 1rem;
       margin-right: .7rem;
-      background-image: url(./img/SVG/chevron-thin-right.svg);
+      background-image: url(./img/SVG/checkmark.svg);
       background-size: cover; }
       @supports (-webkit-mask-image: url()) or (mask-image: url()) {
         .services__item::before {
           background-color: var(--color-primary);
-          -webkit-mask-image: url(./img/SVG/chevron-thin-right.svg);
-          mask-image: url(./img/SVG/chevron-thin-right.svg);
+          -webkit-mask-image: url(./img/SVG/checkmark.svg);
+          mask-image: url(./img/SVG/checkmark.svg);
           -webkit-mask-size: cover;
           mask-size: cover;
           background-image: none; } }

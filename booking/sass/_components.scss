@@ -1,6 +1,15 @@
+.logo-div {
+    position: relative;
+}
+
 .logo {
-    height: 3.25rem;
+    height: 4.5rem;
     margin-left: 2rem;
+    fill: var(--color-primary); // change color of icon
+    display: block;
+    position: absolute;
+    left: -13.5rem;
+    top: -2.2rem;
 }
 
 .search {
@@ -390,14 +399,14 @@
             margin-right: .7rem;
 
             // option for older browsers (doesn't support color change for icons, they'll be black)
-            background-image: url(./img/SVG/chevron-thin-right.svg);
+            background-image: url(./img/SVG/checkmark.svg);
             background-size: cover;
 
             // for newer browsers
             @supports (-webkit-mask-image: url()) or (mask-image: url()) {
                 background-color: var(--color-primary);
-                -webkit-mask-image: url(./img/SVG/chevron-thin-right.svg); // cuts out image from bg-color
-                mask-image: url(./img/SVG/chevron-thin-right.svg);
+                -webkit-mask-image: url(./img/SVG/checkmark.svg); // cuts out image from bg-color
+                mask-image: url(./img/SVG/checkmark.svg);
                 -webkit-mask-size: cover;
                 mask-size: cover;
                 background-image: none; // overwrites black color for icons from previous step for older browsers
