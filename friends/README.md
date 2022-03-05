@@ -4,4 +4,4 @@ Please note the English School "FRIENDS" is completely made-up by me. If such a 
 
 You can see the website in the browser here:
 
-https://lavender-canyon-weight.glitch.me
+https://brave-gates-9f5981.netlify.app/friends/index.html

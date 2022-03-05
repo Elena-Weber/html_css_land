@@ -4,4 +4,4 @@ Please note the travel agency "Michigan Sights" is completely made-up by me. If 
 
 You can see the website in the browser here:
 
-https://chain-almond-layer.glitch.me
+https://brave-gates-9f5981.netlify.app/sights/index.html
