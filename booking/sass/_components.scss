@@ -178,10 +178,6 @@
             border-radius: 50%;
             margin-right: 1rem;
         }
-
-        // &-name {
-
-        // }
     }
 
 }
@@ -297,10 +293,6 @@
 .gallery {
     display: flex;
 
-    // &__item {
-
-    // }
-
     &__pic {
         width: 100%;
         display: block;
@@ -332,7 +324,6 @@
 
     &__rating {
         // flex: 1; // expands to occupy 100%
-        // background-color: lightblue;
         margin-right: auto; // occupies place to the right
         display: flex;
 
@@ -349,12 +340,9 @@
     }
 
     &__location {
-        // flex: 1; // expands to occupy 100%
-        // background-color: lightseagreen;
         font-size: 1.3rem;
         display: flex;
         align-items: center;
-        // color: var(--color-red);
 
         &-icon {
             width: 1.75rem;
@@ -387,7 +375,6 @@
             font-size: 2.25rem;
             font-weight: 300;
             margin-bottom: -.6rem;
-            // margin-bottom: -1rem;
 
             @media only screen and (max-width: $breakpoint-medium) {
                 font-size: 1.8rem;

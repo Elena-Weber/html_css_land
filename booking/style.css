@@ -10,8 +10,7 @@
   --color-gray-light4: #ccc;
   --color-gray-dark1: #333;
   --color-gray-dark2: #777;
-  --color-gray-dark3: #999;
-  --shadow: 0 2rem 6rem rgba($color: #000000, $alpha: .3); }
+  --color-gray-dark3: #999; }
 
 * {
   margin: 0;
