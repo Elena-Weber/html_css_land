@@ -44,6 +44,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .title {
       padding: 1rem 0; } }
+  @media only screen and (max-width: 26.25em) {
+    .title {
+      padding: .5rem 0; } }
   .title-name {
     font-size: 3rem;
     color: var(--color-primary-dark);
@@ -67,6 +70,11 @@ body {
   position: absolute;
   left: -13.5rem;
   top: -2.2rem; }
+  @media only screen and (max-width: 26.25em) {
+    .logo {
+      left: -14.5rem;
+      top: -1.6rem;
+      height: 3.5rem; } }
 
 .search {
   flex: 0 0 40%;
@@ -82,7 +90,7 @@ body {
     font-size: inherit;
     background-color: var(--color-gray-light2);
     border: none;
-    padding: 0.7rem 2rem;
+    padding: .7rem 2rem;
     border-radius: 100px;
     width: 90%;
     transition: all .2s;
@@ -90,6 +98,10 @@ body {
     @media only screen and (max-width: 31.25em) {
       .search__input {
         margin-left: -1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .search__input {
+        font-size: 1.5rem;
+        padding: .5rem 2rem; } }
     .search__input:focus {
       outline: none;
       width: 100%;
@@ -113,6 +125,10 @@ body {
     height: 2rem;
     width: 2rem;
     fill: var(--color-gray-dark2); }
+    @media only screen and (max-width: 26.25em) {
+      .search__icon {
+        height: 1.7rem;
+        width: 1.7rem; } }
 
 .user-nav {
   display: flex;
@@ -158,6 +174,9 @@ body {
     .sidebar-nav {
       display: flex;
       margin: 0; } }
+  @media only screen and (max-width: 26.25em) {
+    .sidebar-nav {
+      font-size: 1.2rem; } }
   .sidebar-nav__item {
     position: relative; }
     .sidebar-nav__item:not(:last-child) {
@@ -201,6 +220,9 @@ body {
       .sidebar-nav__link:link, .sidebar-nav__link:visited {
         padding: 1.5rem 1rem;
         font-size: 1.2rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .sidebar-nav__link:link, .sidebar-nav__link:visited {
+        padding: 1rem 0; } }
   .sidebar-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -209,6 +231,10 @@ body {
     @media only screen and (max-width: 37.5em) {
       .sidebar-nav__icon {
         margin-right: 1rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .sidebar-nav__icon {
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .legal {
   font-size: 1.2rem;
@@ -239,6 +265,10 @@ body {
       .overview__heading {
         font-size: 1.8rem;
         padding: 1.25rem 2rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .overview__heading {
+        font-size: 1.5rem;
+        padding: 1rem 1rem; } }
   .overview__rating {
     margin-right: auto;
     display: flex; }
@@ -246,6 +276,10 @@ body {
       width: 1.75rem;
       height: 1.75rem;
       fill: var(--color-red); }
+      @media only screen and (max-width: 26.25em) {
+        .overview__rating-icon {
+          width: 1.25rem;
+          height: 1.25rem; } }
   .overview__location {
     font-size: 1.3rem;
     display: flex;
@@ -268,6 +302,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .overview__average-rating {
         padding: 0 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .overview__average-rating {
+        margin-left: 1.5rem; } }
     .overview__average-rating-number {
       font-size: 2.25rem;
       font-weight: 300;
@@ -281,6 +318,9 @@ body {
       @media only screen and (max-width: 37.5em) {
         .overview__average-rating-count {
           font-size: .9rem; } }
+      @media only screen and (max-width: 26.25em) {
+        .overview__average-rating-count {
+          display: none; } }
 
 .btn-inline {
   border: none;
@@ -314,6 +354,10 @@ body {
   border-top: 1px solid var(--color-gray-light2);
   display: flex;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 26.25em) {
+    .services {
+      margin: 2rem 0;
+      padding: 2rem 0; } }
   .services__item {
     flex: 0 0 50%;
     margin-bottom: .7rem; }
@@ -351,6 +395,10 @@ body {
     border: 2px solid white; }
     .recommend__photo:not(:last-child) {
       margin-right: -1rem; }
+    @media only screen and (max-width: 26.25em) {
+      .recommend__photo {
+        height: 2.5rem;
+        width: 2.5rem; } }
 
 .review {
   background-color: white;
@@ -363,10 +411,16 @@ body {
     .review {
       padding: 2rem;
       margin-bottom: 3rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .review {
+      margin-bottom: 2rem; } }
   .review__text {
     margin-bottom: 2rem;
     z-index: 10;
     position: relative; }
+    @media only screen and (max-width: 26.25em) {
+      .review__text {
+        margin-bottom: 1.5rem; } }
   .review__user {
     display: flex;
     align-items: center; }
@@ -375,6 +429,10 @@ body {
       height: 6rem;
       border-radius: 50%;
       margin-right: 1.5rem; }
+      @media only screen and (max-width: 26.25em) {
+        .review__user-photo {
+          width: 4rem;
+          height: 4rem; } }
     .review__user-info {
       margin-right: auto; }
     .review__user-name {
@@ -389,6 +447,9 @@ body {
     color: var(--color-primary);
     font-size: 2.3rem;
     font-weight: 300; }
+    @media only screen and (max-width: 26.25em) {
+      .review__rating {
+        font-size: 2rem; } }
   .review::before {
     content: "\201C";
     position: absolute;
@@ -412,6 +473,9 @@ body {
     font-weight: 400;
     margin-bottom: 2.5rem;
     letter-spacing: 3px; }
+    @media only screen and (max-width: 26.25em) {
+      .cta__text {
+        letter-spacing: 1.5px; } }
 
 .btn {
   font-size: 1.6rem;
@@ -479,6 +543,9 @@ body {
       flex-wrap: wrap;
       height: 12rem;
       align-content: space-around; } }
+  @media only screen and (max-width: 26.25em) {
+    .header {
+      height: 10rem; } }
 
 .content {
   display: flex; }
@@ -509,6 +576,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .details {
       flex-direction: column; } }
+  @media only screen and (max-width: 26.25em) {
+    .details {
+      padding: 2rem; } }
 
 .description {
   flex: 0 0 60%;
@@ -524,6 +594,9 @@ body {
     .description {
       margin-right: 0;
       margin-bottom: 3rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .description {
+      margin-bottom: 2rem; } }
 
 .reviews {
   flex: 1;
