@@ -1,0 +1,14 @@
+{
+  "name": "carmania",
+  "version": "1.0.0",
+  "description": "grid project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "Elena Weber",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
