@@ -6,6 +6,23 @@
 
     &__content {
         background-color: $color-light-gray1;
-        grid-column: col-end 4 / full-end;
+        grid-column: col-start 5 / full-end;
+        padding: 6rem 8vw;
+
+        display: grid;
+        align-content: center;
+        justify-items: start;
+
+        // alternative solution as this is 1-dimensional
+
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        font-style: italic;
     }
 }
