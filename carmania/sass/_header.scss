@@ -1,4 +1,57 @@
 .header {
     background-color: $color-dark-gray1;
     grid-column: full-start / col-end 6;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url("https://images.unsplash.com/photo-1470162015499-2b9772941cde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQyfHxjYXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    padding-top: 4rem;
+
+    display: grid;
+    grid-template-rows: 1fr min-content 6rem 1fr;
+    grid-template-columns: max-content;
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+
+    &__logo {
+        height: 3rem;
+        justify-self: center;
+    }
+
+    &__btn {
+        align-self: start;
+        justify-self: start;
+    }
+
+    &__asseenon {
+        
+        &-text {
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+            grid-column-gap: 1.5rem;
+            align-items: center;
+
+            font-size: 1.6rem;
+            color: $color-light-gray2;
+
+            &::before, &::after {
+                content: ""; // obligatory for before/after
+                height: 1px; // line itself before and after text
+                display: block;
+                background-color: currentColor; // inherits color from text
+            }
+        }
+
+        &-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 3rem;
+            justify-items: center;
+
+            img {
+                height: 3.5rem;
+                filter: brightness(70%);
+            }
+        }
+    }
 }
