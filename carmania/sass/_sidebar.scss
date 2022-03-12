@@ -2,4 +2,31 @@
     background-color: $color-primary;
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn {
+    border-radius: 0;
+    border: none;
+    background-color: white;
+    height: 2px;
+    width: 4.5rem;
+    margin-top: 4rem;
+
+    &::before, &::after {
+        background-color: white;
+        height: 2px;
+        width: 4.5rem;
+        content: ""; // obligatory for before and after
+        display: block; // so they are not on top of one another
+    }
+
+    &::before {
+        transform: translateY(-1.5rem); // duplicate stripe above main
+    }
+
+    &::after {
+        transform: translateY(1.3rem); // duplicate stripe under main
+    }
 }
