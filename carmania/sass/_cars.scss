@@ -1,4 +1,71 @@
 .cars {
-    background-color: $color-secondary;
+    display: grid;
     grid-column: center-start / center-end;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+    margin: 15rem 0;
+}
+
+.car {
+    background-color: $color-light-gray1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3.5rem;
+
+    &__img {
+        width: 100%;
+        grid-column: 1 / -1; // occupies whole row so it's only one column for it
+        grid-row: 1 / 2; // heart and img occupy same row
+        z-index: 1;
+    }
+
+    &__heart {
+        grid-row: 1 / 2; // heart and img occupy same row
+        grid-column: 2 / 3;
+        fill: $color-primary;
+        height: 2.5rem;
+        width: 2.5rem;
+        z-index: 2;
+        justify-self: end;
+        margin: 1rem;
+    }
+
+    &__name {
+        grid-column: 1 / -1; // occupies whole row so it's only one column for it
+        grid-row: 1 / 2; // on top of image
+        z-index: 3; // on top of image
+        justify-self: center; // moves it vertically to center of card
+        align-self: end; // moves it horizontally to bottom of image
+        transform: translateY(50%); // moves it half-way down
+        // font-family: ;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.25rem;
+        background-color: $color-secondary;
+        color: white;
+        font-weight: 400;
+        width: 80%; // doesn't occupy whole row, there's empty space on both sides
+    }
+
+    &__year, &__color, &__condition, &__price {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        display: flex;
+        align-items: center; // aligns horizontally
+
+        svg {
+            fill: $color-primary;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__year, &__color {
+        margin-top: 2.5rem;
+    }
+
+    &-btn {
+        grid-column: 1 / -1; // occupies whole row so it's only one column for it
+    }
 }
