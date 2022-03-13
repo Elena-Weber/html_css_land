@@ -4,6 +4,14 @@
     font-weight: 400;
 }
 
+.heading-0 {
+    @extend %heading;
+    font-size: 5.5rem;
+    color: $color-light-gray1;
+    // line-height: 1;
+    justify-self: center;
+}
+
 .heading-1 {
     @extend %heading;
     font-size: 4.5rem;

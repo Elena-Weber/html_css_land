@@ -8,12 +8,24 @@
     justify-items: center; // centered elements vertically
     grid-row-gap: 2rem;
 
+    @media only screen and (max-width: $breakpoint-medium) {
+        grid-column: 1 / -1; // occupies whole row
+    }
+
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
         grid-column-gap: 2rem;
         grid-row-gap: 5vh; // so that it changes with page height
         align-items: center; // centering inside cells horizontally
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media only screen and (max-width: $breakpoint-small) {
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__img {
