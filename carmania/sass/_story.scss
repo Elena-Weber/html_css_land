@@ -1,8 +1,8 @@
 .story {
     &__pictures {
-        background-color: $color-primary;
+        // background-color: $color-secondary;
         // semi-transparent gradient over image
-        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(https://images.unsplash.com/photo-1555386566-10f30cca698a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+        background-image: linear-gradient(rgba($color-secondary, .5), rgba($color-dark, .5)), url(https://images.unsplash.com/photo-1555386566-10f30cca698a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
         grid-column: full-start / col-end 4;
         background-size: cover;
 
@@ -46,7 +46,7 @@
     }
 
     &__content {
-        background-color: $color-light-gray1;
+        background-color: $color-gray;
         grid-column: col-start 5 / full-end;
         padding: 6rem 8vw;
 
@@ -70,5 +70,7 @@
     &__text {
         font-size: 1.5rem;
         font-style: italic;
+        font-family: $font-primary;
+        letter-spacing: 1.5px;
     }
 }

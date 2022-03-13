@@ -1,5 +1,5 @@
 .sellers {
-    background-color: $color-secondary;
+    background-color: $color-dark;
     grid-column: col-start 7 / full-end;
     padding: 3rem;
     display: grid;
@@ -29,14 +29,16 @@
     }
 
     &__img {
-        width: 7rem; // make images smaller
+        width: 7rem; // makes images smaller
         border-radius: 50%;
         display: block;
     }
 
     &__sold {
         text-transform: uppercase;
-        color: $color-light-gray2;
+        color: $color-gray;
         margin-top: -3px; // move text up a bit
+        font-family: $font-secondary;
+        letter-spacing: 1px;
     }
 }

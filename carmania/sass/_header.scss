@@ -1,7 +1,7 @@
 .header {
-    background-color: $color-dark-gray1;
+    background-color: $color-secondary;
     grid-column: full-start / col-end 6;
-    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url("https://images.unsplash.com/photo-1470162015499-2b9772941cde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQyfHxjYXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: linear-gradient(rgba($color-secondary, .85), rgba($color-secondary, .85)), url("https://images.unsplash.com/photo-1470162015499-2b9772941cde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQyfHxjYXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
     background-size: cover;
     background-position: center;
     padding: 8rem;
@@ -21,11 +21,6 @@
         padding: 5rem;
     }
 
-    // &__heading {
-    //     // height: 3rem;
-    //     justify-self: center;
-    // }
-
     &__btn {
         align-self: start;
         justify-self: start;
@@ -39,8 +34,10 @@
             grid-column-gap: 1.5rem;
             align-items: center;
 
-            font-size: 1.6rem;
-            color: $color-light-gray2;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            font-family: $font-primary;
+            color: $color-gray;
 
             &::before, &::after {
                 content: ""; // obligatory for before/after

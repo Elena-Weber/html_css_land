@@ -1,22 +1,25 @@
 %heading { // extends for all other headings (see below)
-    // font-family: ;
-    color: $color-dark-gray2;
+    font-family: $font-primary;
+    color: $color-gray;
     font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .heading-0 {
     @extend %heading;
     font-size: 5.5rem;
-    color: $color-light-gray1;
     // line-height: 1;
     justify-self: center;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-family: $font-secondary;
 }
 
 .heading-1 {
     @extend %heading;
     font-size: 4.5rem;
-    color: $color-light-gray1;
     line-height: 1;
+    font-weight: 300;
 }
 
 .heading-2 {
@@ -24,14 +27,6 @@
     font-size: 4rem;
     font-style: italic;
     line-height: 1;
-
-    &-light {
-        color: $color-light-gray2;
-    }
-
-    &-dark {
-        color: $color-dark-gray1;
-    }
 }
 
 .heading-3 {
@@ -43,20 +38,22 @@
 
 .heading-4 {
     @extend %heading;
+    font-size: 2rem;
+    color: $color-dark;
+    font-weight: 500;
+}
+
+.heading-5 {
+    @extend %heading;
     font-size: 1.9rem;
-
-    &-light {
-        color: $color-light-gray2;
-    }
-
-    &-dark {
-        color: $color-dark-gray1;
-        
-    }
+    color: $color-gray;
+    font-weight: 400;
 }
 
 .btn {
-    background-color: $color-primary;
+    background-color: $color-primary-dark;
+    font-family: $font-secondary;
+    letter-spacing: 2px;
     color: white;
     border: none;
     border-radius: 0;
@@ -67,7 +64,8 @@
     transition: all .2s; // gradually applies hover effect
 
     &:hover {
-        background-color: $color-primary-dark;
+        background-color: $color-primary;
+        color: $color-dark;
     }
 }
 

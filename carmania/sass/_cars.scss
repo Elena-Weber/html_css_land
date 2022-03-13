@@ -7,7 +7,7 @@
 }
 
 .car {
-    background-color: $color-light-gray1;
+    background-color: $color-gray;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 3.5rem;
@@ -38,7 +38,9 @@
         align-self: end; // moves it horizontally to bottom of image
         transform: translateY(50%); // moves it half-way down
         // font-family: ;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+        font-family: $font-secondary;
+        letter-spacing: 1px;
         text-align: center;
         padding: 1.25rem;
         background-color: $color-secondary;
@@ -49,12 +51,13 @@
 
     &__year, &__color, &__condition, &__price {
         font-size: 1.5rem;
+        font-family: $font-secondary;
         margin-left: 2rem;
         display: flex;
         align-items: center; // aligns horizontally
 
         svg {
-            fill: $color-primary;
+            fill: $color-primary-dark;
             height: 2rem;
             width: 2rem;
             margin-right: 1rem;

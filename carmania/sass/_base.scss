@@ -1,13 +1,11 @@
-$color-primary: #c69963;
-$color-primary-dark: #b28451;
-$color-secondary: #101d2c;
-$color-light-gray1: #f9f7f6;
-$color-light-gray2: #aaa;
-$color-dark-gray1: #54483a;
-$color-dark-gray2: #6d5d4b;
+$color-primary: #08D9D6;
+$color-primary-dark: #00ADB5;
+$color-secondary: #393E46;
+$color-gray: #EEEEEE;
+$color-dark: #222831;
 
-$font-primary: 'Nunito', sans-serif;
-$font-display: 'Arial', sans-serif;
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Comfortaa', cursive;
 
 // break points for responsive design
 $breakpoint-largest: 75em; // 1200px
@@ -33,7 +31,7 @@ html {
 }
 
 body {
-    color: $color-dark-gray2;
+    color: $color-dark;
     // font-family:;
     font-weight: 300;
     line-height: 1.6;

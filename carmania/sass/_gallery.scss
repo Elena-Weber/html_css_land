@@ -1,5 +1,5 @@
 .gallery {
-    background-color: $color-dark-gray1;
+    background-color: $color-gray;
     grid-column: full-start / full-end;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
