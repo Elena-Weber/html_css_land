@@ -1,4 +1,30 @@
 .sellers {
     background-color: $color-secondary;
     grid-column: col-start 7 / full-end;
+    padding: 3rem;
+    display: grid;
+    align-content: center; // centered elements horizontally
+    // justify-content: center;
+    justify-items: center; // centered elements vertically
+    grid-row-gap: 2rem;
+
+    &__list {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 5vh; // so that it changes with page height
+        align-items: center; // centering inside cells horizontally
+    }
+
+    &__img {
+        width: 7rem; // make images smaller
+        border-radius: 50%;
+        display: block;
+    }
+
+    &__sold {
+        text-transform: uppercase;
+        color: $color-light-gray2;
+        margin-top: -3px; // move text up a bit
+    }
 }
