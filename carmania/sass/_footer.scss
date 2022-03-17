@@ -8,6 +8,10 @@
     @media only screen and (max-width: $breakpoint-small) {
         padding: 4rem 6rem 2rem 6rem;
     }
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+        padding: 4rem 3rem 2rem 3rem;
+    }
 }
 
 .nav {
@@ -27,7 +31,6 @@
         text-transform: uppercase;
         text-align: center;
         transition: all .2s; // smooth hover effect
-
     }
 
     &__link:hover, &__link:active {
