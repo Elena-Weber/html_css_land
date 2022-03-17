@@ -1,4 +1,6 @@
-nattours/node_modules
-nattours/package-lock.json
 booking/node_modules
 booking/package-lock.json
+carmania/node_modules
+carmania/package-lock.json
+det-tours/node_modules
+det-tours/package-lock.json
