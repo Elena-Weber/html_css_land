@@ -6,6 +6,10 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // responsive columns
     grid-gap: 6rem;
     align-items: start;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+        margin: 10rem 0;
+    }
 }
 
 .feature {
