@@ -13,13 +13,13 @@
         <div class="max-w-4xl w-full">
             <div class="flex items-center justify-between">
                 <img src="ruby-name.png" class="w-24" alt="img">
-                <!-- hide hamburger after small screens -->
+                <!-- hide hamburger for screens bigger than small screens -->
                 <button type="button" class="text-gray-700 sm:hidden hover:text-blue-400">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
                 </button>
             </div>
             <div class="mb-4">
-                <h1 class="text-2xl text-red-800">is a programmer's best friend.</h1>
+                <h1 class="text-2xl text-red-800">... is a programmer's best friend! ;)</h1>
                 <p class="text-sm text-indigo-900">It's a beginner-friendly programming language with a focus on simplicity and productivity.</p>
                 <!-- position relative on parent, flex positioned the ruby in the center -->
                 <div class="relative mt-4 flex">
@@ -34,11 +34,76 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="mt-12 w-full flex-col items-center">
+        <div class="max-w-4xl mx-4">
+            <h2 class="pb-1 font-bold text-xl text-red-800 border-b border-red-700">Quick overview:</h2>
+            <p class="mt-4 text-sm text-gray-700">Ruby is a high-level general-purpose programming language. It was developed in 1995 by Yukihiro Matsumoto in Japan. Ruby has an elegant syntax that is natural to read and easy to write. It's an open source language meaning it is free to copy, use, modify and distribute.</p>
+            <h2 class="pb-1 mt-5 font-bold text-xl text-red-800 border-b border-red-700">Good to know:</h2>
+        </div>
+        <div class="flex flex-col sm:flex-row">
+            <div class="sm:w-1/3 mt-4">
+                <!-- h-full to make all cards same height no matter the amount of text -->
+                <div class="bg-white p-8 h-full border-b-4 border-red-700 rounded-lg flex flex-col items-center sm:mx-2 sm:px-3 md:p-8">
+                    <div class="bg-gray-100 text-red-800 rounded-full p-3">
+                        <svg class="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 19.7l-6.9 2-6.9-2L3.7 3h16.7c-.5 5.6-1 11.1-1.5 16.7zM19.4 4H4.8l1.3 14.9 5.9 1.7 5.9-1.7L19.4 4zM8.1 13.8h2V15l2 .7 2-.7.1-2.2H9.9l-.1-2h4.5l.1-2H7.7l-.1-2h9l-.2 3.9-.4 5.8-3.9 1.3-3.9-1.3-.1-2.7z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+                    </div>
+                    <div class="mt-4 font-bold">
+                        Why we love it:
+                    </div>
+                    <div class="text-center mt-2 text-red-800">
+                        dynamic and object-oriented, flexible and robust, stable and secure, scalable and powerful
+                    </div>
+                </div>
+            </div>
+            <div class="sm:w-1/3 mt-4">
+                <div class="bg-white p-8 h-full border-b-4 border-red-700 rounded-lg flex flex-col items-center sm:mx-2 sm:px-3 md:p-8">
+                    <div class="bg-gray-100 text-red-800 rounded-full p-3">
+                        <svg class="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 19.7l-6.9 2-6.9-2L3.7 3h16.7c-.5 5.6-1 11.1-1.5 16.7zM19.4 4H4.8l1.3 14.9 5.9 1.7 5.9-1.7L19.4 4zM8.1 13.8h2V15l2 .7 2-.7.1-2.2H9.9l-.1-2h4.5l.1-2H7.7l-.1-2h9l-.2 3.9-.4 5.8-3.9 1.3-3.9-1.3-.1-2.7z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+                    </div>
+                    <div class="mt-4 font-bold">
+                        Areas of application:
+                    </div>
+                    <div class="text-center mt-2 text-red-800">
+                        full stack web, mobile and game development, DevOps and automation, data processing etc.
+                    </div>
+                </div>
+            </div>
+            <div class="sm:w-1/3 mt-4">
+                <div class="bg-white p-8 h-full border-b-4 border-red-700 rounded-lg flex flex-col items-center sm:mx-2 sm:px-3 md:p-8">
+                    <div class="bg-gray-100 text-red-800 rounded-full p-3">
+                        <svg class="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 19.7l-6.9 2-6.9-2L3.7 3h16.7c-.5 5.6-1 11.1-1.5 16.7zM19.4 4H4.8l1.3 14.9 5.9 1.7 5.9-1.7L19.4 4zM8.1 13.8h2V15l2 .7 2-.7.1-2.2H9.9l-.1-2h4.5l.1-2H7.7l-.1-2h9l-.2 3.9-.4 5.8-3.9 1.3-3.9-1.3-.1-2.7z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+                    </div>
+                    <div class="mt-4 font-bold">
+                        Companies using Ruby:
+                    </div>
+                    <div class="text-center mt-2 text-red-800">
+                        Apple, Twitter, Etsy, AirBnb, Netflix, Hulu, GitHub, Groupon, Shopify, Kickstarter, Coachsurfing etc.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-red-800 py-12 mt-12 w-full flex flex-col items-center border-t-2 border-black">
+            <h2 class="text-white font-bold text-xl">Sign up for a free intro course</h2>
+            <form class="max-w-xl w-full text-blue-400 mt-4 px-8 md:px-0" action="#" method="post">
+                <!-- negative margin (md:-mx-2) is to align inputs and button -->
+                <div class="flex flex-col md:flex md:flex-row md:-mx-2">
+                    <label for="first_name"></label>
+                    <input class="bg-gray-200 mt-4 p-2 w-full border border-red-500 rounded-lg md:mx-2" type="text" name="first_name" id="first_name" placeholder="First name">
 
+                    <label for="last_name"></label>
+                    <input class="bg-gray-200 mt-4 p-2 w-full border border-red-500 rounded-lg md:mx-2" type="text" name="last_name" id="last_name" placeholder="Last name">
+
+                    <label for="email"></label>
+                    <input class="bg-gray-200 mt-4 p-2 w-full border border-red-500 rounded-lg md:mx-2" type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="flex flex-col md:flex-row">
+                    <button class="bg-gray-100 text-sm mt-4 py-2 w-full rounded-lg" type="submit">Sign up</button>
+                </div>
+            </form>
+        </div>
     </main>
-    <footer>
-        <p>Created by Elena Weber</p>
+    <footer class="bg-red-800 w-full text-center pb-8">
+        <p class="text-xs font-light text-gray-100">Created by Elena Weber</p>
     </footer>
 </body>
 </html>
