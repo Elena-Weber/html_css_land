@@ -80,16 +80,16 @@
                 <!-- negative margin (md:-mx-2) is to align inputs and button -->
                 <div class="flex flex-col md:flex-row md:-mx-2">
                     <label for="first_name"></label>
-                    <input class="bg-gray-100 mt-4 p-2 w-full border border-red-900 rounded-lg md:mx-2" type="text" name="first_name" id="first_name" placeholder="First name">
+                    <input class="bg-gray-100 mt-4 p-2 w-full border border-red-900 rounded-lg md:mx-2" type="text" name="first_name" id="first_name" placeholder="First name" required>
 
                     <label for="last_name"></label>
-                    <input class="bg-gray-100 mt-4 p-2 w-full border border-red-900 rounded-lg md:mx-2" type="text" name="last_name" id="last_name" placeholder="Last name">
+                    <input class="bg-gray-100 mt-4 p-2 w-full border border-red-900 rounded-lg md:mx-2" type="text" name="last_name" id="last_name" placeholder="Last name" required>
 
                     <label for="email"></label>
-                    <input class="bg-gray-100 mt-4 p-2 w-full border border-red-900 rounded-lg md:mx-2" type="text" name="email" id="email" placeholder="Email">
+                    <input class="bg-gray-100 mt-4 p-2 w-full border border-red-900 rounded-lg md:mx-2" type="email" name="email" id="email" placeholder="Email" required>
                 </div>
                 <div class="flex flex-col md:flex-row">
-                    <button class="bg-white text-xl text-red-800 tracking-wider font-bold text-lg mt-4 py-2 w-full border border-red-900 rounded-lg shadow-lg hover:bg-red-900 hover:text-white hover:border-white"><a href="https://brave-gates-9f5981.netlify.app/ruby/index.html">Sign up</a></button>
+                    <button class="bg-white text-xl text-red-800 tracking-wider font-bold text-lg mt-4 py-2 w-full border border-red-900 rounded-lg shadow-lg hover:bg-red-900 hover:text-white hover:border-white" disabled>Sign up</button>
                 </div>
             </form>
         </div>
@@ -98,6 +98,6 @@
     <footer class="bg-red-800 w-full text-center py-2 border-t border-gray-400 border-dashed hover:bg-red-900">
         <p class="text-xs font-light text-gray-100">Created by Elena Weber</p>
     </footer>
-    
+
 </body>
 </html>
